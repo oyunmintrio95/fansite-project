@@ -11,6 +11,7 @@ import Landing from "./components/Landing";
 import Nav from "./components/Nav";
 import GeneralError from './components/GeneralError';
 import ArmorDetail from './components/ArmorDetail';
+import WeaponDetail from './components/WeaponDetail';
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
             <Route path='/armors/:armorId' element={<ArmorDetail />} />
             <Route path='/locations' element={<LocationList />} />
             <Route path='/weapons' element={<WeaponList />} />
+            <Route path='/weapons/:weaponId' element={<WeaponDetail />} />
             <Route path='/forum' element={<ForumList />} />
             <Route path='/forum/add' element={<ForumForm />} />
             <Route path='/about' element={<AboutList />} />
