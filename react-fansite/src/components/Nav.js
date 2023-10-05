@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Nav() {
     return (
-        <nav className='navbar navbar-expand' style={{backgroundSize: "0", backgroundColor: "#A92117"}}>
+        <nav className='navbar navbar-expand mb-3' style={{backgroundSize: "0", backgroundColor: "#A92117"}}>
             <div className='d-flex'>
 				<NavLink className='navbar-brand' to='/'>
 					Monster Hunter World
