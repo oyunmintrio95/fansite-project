@@ -12,7 +12,6 @@ export default function LocationCard({location}){
                         <li>ID: {location.id}</li>
                         <li>Name: {location.name}</li>
                         <li>Zones: {location.zoneCount}</li>
-                        <li>Camps: {location.camps}</li>
                     </ul>
                 </div>
 
