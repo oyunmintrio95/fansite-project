@@ -43,6 +43,14 @@
                     "website-name": "FextraLife",
                     "url": "https://monsterhunterworld.wiki.fextralife.com/Locations"
                 },
+                {
+                    "website-name": "IGN",
+                    "url": "https://www.ign.com/wikis/monster-hunter-world/Locations"
+                },
+                {
+                    "website-name": "Fandom",
+                    "url": "https://monsterhunter.fandom.com/wiki/Astera"
+                }
             ],
             "notes": [
                 "Watch out for Rathalos in area 12"
@@ -55,14 +63,37 @@
             "category": "Hunting",
             "type": "Coral",
             "description": "A vibrant coral-covered landscape with towering spires.",
-            "map": "Coral Highlands Map URL",
+            "map": [
+                "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/coral-highlands-lvl1.jpg",
+                "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/coral-highlands-lvl2.jpg",
+                "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/coral-highlands-lvl3.jpg"
+            ],
             "hazards": ["Coral Puddles", "Falling Boulders"],
             "materials": ["Coral Crystal", "Fucium Ore", "Spiritcore Ore"],
             "monsters": ["Legiana", "Odogaron", "Pink Rathian"],
             "quests": ["Hunt the Legiana", "Investigate the Coral Pukei-Pukei"],
-            "images": ["Coral Highlands Image 1 URL", "Coral Highlands Image 2 URL"],
+            "images": [{
+                "id": 1,
+                "title": "Mister Topsides Mining Guide",
+                "alt-text": "Mister Topsides Mining Guide",
+                "url": "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/coral-highlands-farm-small.jpg",
+                "citation": "https://monsterhunterworld.wiki.fextralife.com/Coral+Highlands"
+            }],
             "videos": ["Coral Highlands Video 1 URL", "Coral Highlands Video 2 URL"],
-            "references": ["Monster Hunter Wiki Coral Highlands", "Official Game Guide"],
+            "references": [
+                {
+                    "website-name": "FextraLife",
+                    "url": "https://monsterhunterworld.wiki.fextralife.com/Locations"
+                },
+                {
+                    "website-name": "IGN",
+                    "url": "https://www.ign.com/wikis/monster-hunter-world/Locations"
+                },
+                {
+                    "website-name": "Fandom",
+                    "url": "https://monsterhunter.fandom.com/wiki/Astera"
+                }
+            ],
             "notes": ["Beware of Legiana's aerial attacks."]
         },
         {
@@ -79,7 +110,20 @@
             "quests": ["Hunt the Barroth", "Slay the Kulu-Ya-Ku"],
             "images": ["Wildspire Waste Image 1 URL", "Wildspire Waste Image 2 URL"],
             "videos": ["Wildspire Waste Video 1 URL", "Wildspire Waste Video 2 URL"],
-            "references": ["Monster Hunter Wiki Wildspire Waste", "Official Game Guide"],
+            "references": [
+                {
+                    "website-name": "FextraLife",
+                    "url": "https://monsterhunterworld.wiki.fextralife.com/Locations"
+                },
+                {
+                    "website-name": "IGN",
+                    "url": "https://www.ign.com/wikis/monster-hunter-world/Locations"
+                },
+                {
+                    "website-name": "Fandom",
+                    "url": "https://monsterhunter.fandom.com/wiki/Astera"
+                }
+            ],
             "notes": ["Use Screamer Pods to stun Diablos when it burrows."]
           },
         {
@@ -113,7 +157,20 @@
             "quests": ["Hunt the Teostra", "Slay the Nergigante"],
             "images": ["Elder's Recess Image 1 URL", "Elder's Recess Image 2 URL"],
             "videos": ["Elder's Recess Video 1 URL", "Elder's Recess Video 2 URL"],
-            "references": ["Monster Hunter Wiki Elder's Recess", "Official Game Guide"],
+            "references": [
+                {
+                    "website-name": "FextraLife",
+                    "url": "https://monsterhunterworld.wiki.fextralife.com/Locations"
+                },
+                {
+                    "website-name": "IGN",
+                    "url": "https://www.ign.com/wikis/monster-hunter-world/Locations"
+                },
+                {
+                    "website-name": "Fandom",
+                    "url": "https://monsterhunter.fandom.com/wiki/Astera"
+                }
+            ],
             "notes": ["Cool Drinks are essential to withstand the heat."]
           },
         {
@@ -130,7 +187,20 @@
             "quests": ["Hunt the Rathian", "Investigate the Bazelgeuse"],
             "images": ["Great Ravine Image 1 URL", "Great Ravine Image 2 URL"],
             "videos": ["Great Ravine Video 1 URL", "Great Ravine Video 2 URL"],
-            "references": ["Monster Hunter Wiki Great Ravine", "Official Game Guide"],
+            "references": [
+                {
+                    "website-name": "FextraLife",
+                    "url": "https://monsterhunterworld.wiki.fextralife.com/Locations"
+                },
+                {
+                    "website-name": "IGN",
+                    "url": "https://www.ign.com/wikis/monster-hunter-world/Locations"
+                },
+                {
+                    "website-name": "Fandom",
+                    "url": "https://monsterhunter.fandom.com/wiki/Astera"
+                }
+            ],
             "notes": ["Beware of Bazelgeuse's bombing runs."]
           },
         {
@@ -147,7 +217,20 @@
             "quests": ["Hunt the Kushala Daora", "Slay the Namielle"],
             "images": ["Confluence of Fates Image 1 URL", "Confluence of Fates Image 2 URL"],
             "videos": ["Confluence of Fates Video 1 URL", "Confluence of Fates Video 2 URL"],
-            "references": ["Monster Hunter Wiki Confluence of Fates", "Official Game Guide"],
+            "references": [
+                {
+                    "website-name": "FextraLife",
+                    "url": "https://monsterhunterworld.wiki.fextralife.com/Locations"
+                },
+                {
+                    "website-name": "IGN",
+                    "url": "https://www.ign.com/wikis/monster-hunter-world/Locations"
+                },
+                {
+                    "website-name": "Fandom",
+                    "url": "https://monsterhunter.fandom.com/wiki/Astera"
+                }
+            ],
             "notes": ["Aim for Kushala Daora's head to break its wind aura."]
           },
         {
@@ -164,7 +247,20 @@
             "quests": ["Hunt the Zinogre", "Slay the Fulgur Anjanath"],
             "images": ["Everstream Image 1 URL", "Everstream Image 2 URL"],
             "videos": ["Everstream Video 1 URL", "Everstream Video 2 URL"],
-            "references": ["Monster Hunter Wiki Everstream", "Official Game Guide"],
+            "references": [
+                {
+                    "website-name": "FextraLife",
+                    "url": "https://monsterhunterworld.wiki.fextralife.com/Locations"
+                },
+                {
+                    "website-name": "IGN",
+                    "url": "https://www.ign.com/wikis/monster-hunter-world/Locations"
+                },
+                {
+                    "website-name": "Fandom",
+                    "url": "https://monsterhunter.fandom.com/wiki/Astera"
+                }
+            ],
             "notes": ["Watch out for Zinogre's charged attacks."]
           },
         {
@@ -181,7 +277,20 @@
             "quests": ["Hunt the Gold Rathian", "Slay the Silver Rathalos"],
             "images": ["Caverns of El Dorado Image 1 URL", "Caverns of El Dorado Image 2 URL"],
             "videos": ["Caverns of El Dorado Video 1 URL", "Caverns of El Dorado Video 2 URL"],
-            "references": ["Monster Hunter Wiki Caverns of El Dorado", "Official Game Guide"],
+            "references": [
+                {
+                    "website-name": "FextraLife",
+                    "url": "https://monsterhunterworld.wiki.fextralife.com/Locations"
+                },
+                {
+                    "website-name": "IGN",
+                    "url": "https://www.ign.com/wikis/monster-hunter-world/Locations"
+                },
+                {
+                    "website-name": "Fandom",
+                    "url": "https://monsterhunter.fandom.com/wiki/Astera"
+                }
+            ],
             "notes": ["Bring traps to capture the elusive Nargacuga."]
           },
         {
@@ -198,7 +307,20 @@
             "quests": ["Arena Quest 1", "Arena Quest 2"],
             "images": ["Special Arena Image 1 URL", "Special Arena Image 2 URL"],
             "videos": ["Special Arena Video 1 URL", "Special Arena Video 2 URL"],
-            "references": ["Monster Hunter Wiki Special Arena", "Official Game Guide"],
+            "references": [
+                {
+                    "website-name": "FextraLife",
+                    "url": "https://monsterhunterworld.wiki.fextralife.com/Locations"
+                },
+                {
+                    "website-name": "IGN",
+                    "url": "https://www.ign.com/wikis/monster-hunter-world/Locations"
+                },
+                {
+                    "website-name": "Fandom",
+                    "url": "https://monsterhunter.fandom.com/wiki/Astera"
+                }
+            ],
             "notes": ["Use provided equipment in the arena."]
           },
         {
@@ -215,7 +337,20 @@
             "quests": ["Arena Quest 1", "Arena Quest 2"],
             "images": ["Arena Image 1 URL", "Arena Image 2 URL"],
             "videos": ["Arena Video 1 URL", "Arena Video 2 URL"],
-            "references": ["Monster Hunter Wiki Arena", "Official Game Guide"],
+            "references": [
+                {
+                    "website-name": "FextraLife",
+                    "url": "https://monsterhunterworld.wiki.fextralife.com/Locations"
+                },
+                {
+                    "website-name": "IGN",
+                    "url": "https://www.ign.com/wikis/monster-hunter-world/Locations"
+                },
+                {
+                    "website-name": "Fandom",
+                    "url": "https://monsterhunter.fandom.com/wiki/Astera"
+                }
+            ],
             "notes": ["Use provided equipment in the arena."]
           },
         {
@@ -232,7 +367,20 @@
             "quests": ["Hunt the Beotodus", "Slay the Velkhana"],
             "images": ["Hoarfrost Reach Image 1 URL", "Hoarfrost Reach Image 2 URL"],
             "videos": ["Hoarfrost Reach Video 1 URL", "Hoarfrost Reach Video 2 URL"],
-            "references": ["Monster Hunter Wiki Hoarfrost Reach", "Official Game Guide"],
+            "references": [
+                {
+                    "website-name": "FextraLife",
+                    "url": "https://monsterhunterworld.wiki.fextralife.com/Locations"
+                },
+                {
+                    "website-name": "IGN",
+                    "url": "https://www.ign.com/wikis/monster-hunter-world/Locations"
+                },
+                {
+                    "website-name": "Fandom",
+                    "url": "https://monsterhunter.fandom.com/wiki/Astera"
+                }
+            ],
             "notes": ["Bring hot drinks to counter the cold."]
           },
         {
@@ -266,11 +414,24 @@
             "quests": ["Hunt the Nargacuga", "Slay the Yian Garuga"],
             "images": ["Secluded Valley Image 1 URL", "Secluded Valley Image 2 URL"],
             "videos": ["Secluded Valley Video 1 URL", "Secluded Valley Video 2 URL"],
-            "references": ["Monster Hunter Wiki Secluded Valley", "Official Game Guide"],
+            "references": [
+                {
+                    "website-name": "FextraLife",
+                    "url": "https://monsterhunterworld.wiki.fextralife.com/Locations"
+                },
+                {
+                    "website-name": "IGN",
+                    "url": "https://www.ign.com/wikis/monster-hunter-world/Locations"
+                },
+                {
+                    "website-name": "Fandom",
+                    "url": "https://monsterhunter.fandom.com/wiki/Astera"
+                }
+            ],
             "notes": ["Stay vigilant for surprise attacks."]
           },
         {
-            "id": 0,
+            "id": 15,
             "zoneCount": 0,
             "name": "Astera",
             "category": "Settlement",
@@ -324,7 +485,7 @@
             ]
         },
         {
-            "id": 0,
+            "id": 16,
             "zoneCount": 0,
             "name": "Research Base",
             "category": "Settlement",
@@ -358,15 +519,25 @@
                 "Ancient Forest Video 2 URL"
             ],
             "references": [
-                "Monster Hunter Wiki Ancient Forest",
-                "Official Game Guide"
+                {
+                    "website-name": "FextraLife",
+                    "url": "https://monsterhunterworld.wiki.fextralife.com/Locations"
+                },
+                {
+                    "website-name": "IGN",
+                    "url": "https://www.ign.com/wikis/monster-hunter-world/Locations"
+                },
+                {
+                    "website-name": "Fandom",
+                    "url": "https://monsterhunter.fandom.com/wiki/Astera"
+                }
             ],
             "notes": [
                 "Watch out for Rathalos in area 12"
             ]
         },
         {
-            "id": 0,
+            "id": 17,
             "zoneCount": 0,
             "name": "Canteen",
             "category": "",
@@ -400,15 +571,25 @@
                 "Ancient Forest Video 2 URL"
             ],
             "references": [
-                "Monster Hunter Wiki Ancient Forest",
-                "Official Game Guide"
+                {
+                    "website-name": "FextraLife",
+                    "url": "https://monsterhunterworld.wiki.fextralife.com/Locations"
+                },
+                {
+                    "website-name": "IGN",
+                    "url": "https://www.ign.com/wikis/monster-hunter-world/Locations"
+                },
+                {
+                    "website-name": "Fandom",
+                    "url": "https://monsterhunter.fandom.com/wiki/Astera"
+                }
             ],
             "notes": [
                 "Watch out for Rathalos in area 12"
             ]
         },
         {
-            "id": 0,
+            "id": 18,
             "zoneCount": 0,
             "name": "Smithy",
             "category": "",
@@ -442,15 +623,25 @@
                 "Ancient Forest Video 2 URL"
             ],
             "references": [
-                "Monster Hunter Wiki Ancient Forest",
-                "Official Game Guide"
+                {
+                    "website-name": "FextraLife",
+                    "url": "https://monsterhunterworld.wiki.fextralife.com/Locations"
+                },
+                {
+                    "website-name": "IGN",
+                    "url": "https://www.ign.com/wikis/monster-hunter-world/Locations"
+                },
+                {
+                    "website-name": "Fandom",
+                    "url": "https://monsterhunter.fandom.com/wiki/Astera"
+                }
             ],
             "notes": [
                 "Watch out for Rathalos in area 12"
             ]
         },
         {
-            "id": 0,
+            "id": 19,
             "zoneCount": 0,
             "name": "Seliana",
             "category": "",
@@ -484,8 +675,18 @@
                 "Ancient Forest Video 2 URL"
             ],
             "references": [
-                "Monster Hunter Wiki Ancient Forest",
-                "Official Game Guide"
+                {
+                    "website-name": "FextraLife",
+                    "url": "https://monsterhunterworld.wiki.fextralife.com/Locations"
+                },
+                {
+                    "website-name": "IGN",
+                    "url": "https://www.ign.com/wikis/monster-hunter-world/Locations"
+                },
+                {
+                    "website-name": "Fandom",
+                    "url": "https://monsterhunter.fandom.com/wiki/Astera"
+                }
             ],
             "notes": [
                 "Watch out for Rathalos in area 12"
