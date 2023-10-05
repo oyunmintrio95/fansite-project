@@ -8,7 +8,7 @@ export default function ArmorCard({armor}){
                     {/* <img 
                     className='card-img-top'
                     style={{height: '250px', objectFit: 'cover'}}
-                    src={pet.imageUrl} alt={`${pet.name}, a ${pet.breed}`} /> */}
+                    src={armor.assets.imageMale} alt={`${armor.name}, type of ${armor.type}`} /> */}
                 </div>
                 <div className='card-body'>
                     <h2 className='card-title fs-4'>Name: {armor.name} </h2>
