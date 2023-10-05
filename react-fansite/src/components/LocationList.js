@@ -1,15 +1,17 @@
 import { useEffect, useState } from "react";
+import data from '../data/locations.json';
 import LocationCard from "./LocationCard";
 
 export default function LocationList({location}){
-    const [locations, setLocations] = useState([]);
-    useEffect(() => {
-        fetch('https://mhw-db.com/locations')
-    .then(response => response.json())
-    .then(mon => {
-        setLocations(mon)
-    });
-    }, []);
+    const [locations, setLocations] = useState(data.locations);
+    console.log(data);
+    // useEffect(() => {
+    //     fetch('https://mhw-db.com/locations')
+    // .then(response => response.json())
+    // .then(mon => {
+    //     setLocations(mon)
+    // });
+    // }, []);
 
     return (
         <div>
