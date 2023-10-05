@@ -48,9 +48,8 @@ export default function ArmorDetail(){
         <>
             <h1 className='mt-3 mb-3'> {armor.name} Detail </h1>
 
-            <div className='col-3'>
+            <div className="my-4"  style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
                 <img 
-                    className='card-img-top'
                     style={{height: '250px', objectFit: 'cover'}}
                     src={armor.assets.imageMale} alt={`Male ${armor.name}`} />
              </div>
