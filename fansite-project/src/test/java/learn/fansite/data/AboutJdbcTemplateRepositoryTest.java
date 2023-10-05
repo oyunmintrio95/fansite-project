@@ -21,8 +21,8 @@ class AboutJdbcTemplateRepositoryTest {
 
     @Test
     void shouldFindById() {
-        About secret = new About(1, "first 1", "last 1", "I am a monster hunter fan","'github.com/1");
-        About topSecret = new About(2, "first 2", "last 2", "I am not a monster hunter fan","'github.com/2");
+        About secret = new About(1, "first 1", "last 1", "I am a monster hunter fan","github.com/1");
+        About topSecret = new About(2, "first 2", "last 2", "I am not a monster hunter fan","github.com/2");
 
         About actual = repository.findById(1);
         assertEquals(secret, actual);
