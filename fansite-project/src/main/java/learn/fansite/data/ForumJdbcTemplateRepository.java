@@ -65,7 +65,7 @@ public class ForumJdbcTemplateRepository implements ForumRepository{
         final String sql = """
                             update forum set
                             title = ?,
-                            post_content = ?,
+                            post_content = ?
                             where forum_id = ?;
                             """;
         return jdbcTemplate.update(sql,
