@@ -47,7 +47,14 @@ export default function ArmorDetail(){
     return(
         <>
             <h1 className='mt-3 mb-3'> {armor.name} Detail </h1>
-            
+
+            <div className="row">
+                <img 
+                    className='card-img-top'
+                    style={{height: '250px', objectFit: 'cover'}}
+                    src={armor.assets.imageMale} alt={`Male ${armor.name}`} />
+             </div>
+
             <div className='mb-3'>
                 <label className='form-label'>Name</label>
                     <input type="text" className="form-control" 
