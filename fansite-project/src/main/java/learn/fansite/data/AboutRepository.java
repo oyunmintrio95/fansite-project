@@ -7,5 +7,5 @@ import java.util.List;
 public interface AboutRepository {
     List<About> findAll();
 
-    About findById(int securityClearanceId);
+    About findById(int aboutId);
 }
