@@ -2,9 +2,11 @@ package learn.fansite.data;
 
 import learn.fansite.models.About;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public class AboutJdbcTemplateRepository implements AboutRepository{
     private final JdbcTemplate jdbcTemplate;
 
@@ -13,17 +15,22 @@ public class AboutJdbcTemplateRepository implements AboutRepository{
     }
     @Override
     public List<About> findAll() {
-        final String sql = "select security_clearance_id, `name` as security_clearance_name from security_clearance";
+        final String sql = """
+                            select about_id, first_name, last_name, about_description, git
+                            from about;
+                            """;
         return jdbcTemplate.query(sql, new AboutMapper());
     }
     @Override
-    public About findById(int securityClearanceId) {
+    public About findById(int aboutId) {
 
-        final String sql = "select security_clearance_id, `name` as security_clearance_name "
-                + "from security_clearance "
-                + "where security_clearance_id = ?;";
+        final String sql = """
+                            select about_id, first_name, last_name, about_description, git
+                            from about
+                            where about_id = ?;
+                            """;
 
-        return jdbcTemplate.query(sql, new AboutMapper(), securityClearanceId)
+        return jdbcTemplate.query(sql, new AboutMapper(), aboutId)
                 .stream()
                 .findFirst().orElse(null);
     }
