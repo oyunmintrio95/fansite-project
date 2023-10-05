@@ -1,0 +1,495 @@
+{
+    "locations": [
+        {
+            "id": 1,
+            "zoneCount": 17,
+            "name": "Ancient Forest",
+            "category": "Hunting",
+            "type": "Forest",
+            "description": "A lush, ancient forest with towering trees and diverse wildlife.",
+            "map": [
+                "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/ancient-forest-lvl3.jpg",
+                "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/MHW-AncientForest.jpg",
+                "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/ancient-forest-lvl2.jpg"
+            ],
+            "hazards": [
+                "Falling Boulders",
+                "Vines"
+            ],
+            "materials": [
+                "Herbs",
+                "Honey",
+                "Ancient Berries"
+            ],
+            "monsters": [
+                "Great Jagras",
+                "Anjanath",
+                "Rathalos"
+            ],
+            "quests": [
+                "Hunt the Great Jagras",
+                "Capture the Anjanath"
+            ],
+            "images": [
+                "Ancient Forest Image 1 URL",
+                "Ancient Forest Image 2 URL"
+            ],
+            "videos": [
+                "Ancient Forest Video 1 URL",
+                "Ancient Forest Video 2 URL"
+            ],
+            "references": [
+                {
+                    "website-name": "FextraLife",
+                    "url": "https://monsterhunterworld.wiki.fextralife.com/Locations"
+                },
+            ],
+            "notes": [
+                "Watch out for Rathalos in area 12"
+            ]
+        },
+        {
+            "id": 2,
+            "zoneCount": 15,
+            "name": "Coral Highlands",
+            "category": "Hunting",
+            "type": "Coral",
+            "description": "A vibrant coral-covered landscape with towering spires.",
+            "map": "Coral Highlands Map URL",
+            "hazards": ["Coral Puddles", "Falling Boulders"],
+            "materials": ["Coral Crystal", "Fucium Ore", "Spiritcore Ore"],
+            "monsters": ["Legiana", "Odogaron", "Pink Rathian"],
+            "quests": ["Hunt the Legiana", "Investigate the Coral Pukei-Pukei"],
+            "images": ["Coral Highlands Image 1 URL", "Coral Highlands Image 2 URL"],
+            "videos": ["Coral Highlands Video 1 URL", "Coral Highlands Video 2 URL"],
+            "references": ["Monster Hunter Wiki Coral Highlands", "Official Game Guide"],
+            "notes": ["Beware of Legiana's aerial attacks."]
+        },
+        {
+            "id": 3,
+            "zoneCount": 15,
+            "name": "Wildspire Waste",
+            "category": "Hunting",
+            "type": "Desert",
+            "description": "A vast, arid desert with shifting sands and unique flora.",
+            "map": "Wildspire Waste Map URL",
+            "hazards": ["Quicksand", "Mud"],
+            "materials": ["Dragonite Ore", "Barroth Ridge", "Inferno Sac"],
+            "monsters": ["Barroth", "Diablos", "Rathian"],
+            "quests": ["Hunt the Barroth", "Slay the Kulu-Ya-Ku"],
+            "images": ["Wildspire Waste Image 1 URL", "Wildspire Waste Image 2 URL"],
+            "videos": ["Wildspire Waste Video 1 URL", "Wildspire Waste Video 2 URL"],
+            "references": ["Monster Hunter Wiki Wildspire Waste", "Official Game Guide"],
+            "notes": ["Use Screamer Pods to stun Diablos when it burrows."]
+          },
+        {
+            "id": 4,
+            "zoneCount": 16,
+            "name": "Rotten Vale",
+            "category": "Hunting",
+            "type": "Cave",
+            "description": "A dark and foreboding cavern filled with toxic miasma and bizarre creatures.",
+            "map": "Rotten Vale Map URL",
+            "hazards": ["Effluvium", "Toxic Pools"],
+            "materials": ["Dragonbone Relic", "Beryl Ore", "Omniplegia Sac"],
+            "monsters": ["Odogaron", "Radobaan", "Great Girros"],
+            "quests": ["Hunt the Odogaron", "Slay the Radobaan"],
+            "images": ["Rotten Vale Image 1 URL", "Rotten Vale Image 2 URL"],
+            "videos": ["Rotten Vale Video 1 URL", "Rotten Vale Video 2 URL"],
+            "references": ["Monster Hunter Wiki Rotten Vale", "Official Game Guide"],
+            "notes": ["Beware of Effluvium damage, bring Nulberries."]
+          },
+        {
+            "id": 5,
+            "zoneCount": 16,
+            "name": "Elder's Recess",
+            "category": "Hunting",
+            "type": "Volcano",
+            "description": "A fiery, volcanic region teeming with molten lava and powerful monsters.",
+            "map": "Elder's Recess Map URL",
+            "hazards": ["Lava Pools", "Brimstone"],
+            "materials": ["Firecell Stone", "Dragonvein Crystal", "Elder Dragon Bone"],
+            "monsters": ["Teostra", "Lunastra", "Nergigante"],
+            "quests": ["Hunt the Teostra", "Slay the Nergigante"],
+            "images": ["Elder's Recess Image 1 URL", "Elder's Recess Image 2 URL"],
+            "videos": ["Elder's Recess Video 1 URL", "Elder's Recess Video 2 URL"],
+            "references": ["Monster Hunter Wiki Elder's Recess", "Official Game Guide"],
+            "notes": ["Cool Drinks are essential to withstand the heat."]
+          },
+        {
+            "id": 6,
+            "zoneCount": 1,
+            "name": "Great Ravine",
+            "category": "Special",
+            "type": "Canyon",
+            "description": "A massive, deep canyon with precarious ledges and complex ecosystems.",
+            "map": "Great Ravine Map URL",
+            "hazards": ["Falling Debris", "Strong Winds"],
+            "materials": ["Carbalite Ore", "Dragonite Ore", "Monster Bone L"],
+            "monsters": ["Rathian", "Bazelgeuse", "Legiana"],
+            "quests": ["Hunt the Rathian", "Investigate the Bazelgeuse"],
+            "images": ["Great Ravine Image 1 URL", "Great Ravine Image 2 URL"],
+            "videos": ["Great Ravine Video 1 URL", "Great Ravine Video 2 URL"],
+            "references": ["Monster Hunter Wiki Great Ravine", "Official Game Guide"],
+            "notes": ["Beware of Bazelgeuse's bombing runs."]
+          },
+        {
+            "id": 7,
+            "zoneCount": 3,
+            "name": "Confluence of Fates",
+            "category": "Special",
+            "type": "Mystical",
+            "description": "A place where multiple elements converge, creating a unique and mystical environment.",
+            "map": "Confluence of Fates Map URL",
+            "hazards": ["Elemental Surges", "Teleportation Pads"],
+            "materials": ["Elder Dragon Bone", "Purecrystal", "Daora Dragon Scale"],
+            "monsters": ["Kushala Daora", "Namielle", "Xeno'jiiva"],
+            "quests": ["Hunt the Kushala Daora", "Slay the Namielle"],
+            "images": ["Confluence of Fates Image 1 URL", "Confluence of Fates Image 2 URL"],
+            "videos": ["Confluence of Fates Video 1 URL", "Confluence of Fates Video 2 URL"],
+            "references": ["Monster Hunter Wiki Confluence of Fates", "Official Game Guide"],
+            "notes": ["Aim for Kushala Daora's head to break its wind aura."]
+          },
+        {
+            "id": 8,
+            "zoneCount": 1,
+            "name": "Everstream",
+            "category": "Special",
+            "type": "River",
+            "description": "A colossal, winding river that courses through the New World, connecting various regions.",
+            "map": "Everstream Map URL",
+            "hazards": ["Strong Currents", "Waterfalls"],
+            "materials": ["Dragonvein Crystal", "Fulgurbug", "Carbalite Ore"],
+            "monsters": ["Zinogre", "Stygian Zinogre", "Fulgur Anjanath"],
+            "quests": ["Hunt the Zinogre", "Slay the Fulgur Anjanath"],
+            "images": ["Everstream Image 1 URL", "Everstream Image 2 URL"],
+            "videos": ["Everstream Video 1 URL", "Everstream Video 2 URL"],
+            "references": ["Monster Hunter Wiki Everstream", "Official Game Guide"],
+            "notes": ["Watch out for Zinogre's charged attacks."]
+          },
+        {
+            "id": 9,
+            "zoneCount": 4,
+            "name": "Caverns of El Dorado",
+            "category": "Special",
+            "type": "Cave",
+            "description": "A mysterious underground cavern said to be filled with untold treasures.",
+            "map": "Caverns of El Dorado Map URL",
+            "hazards": ["Falling Rocks", "Treacherous Terrain"],
+            "materials": ["Elder Dragon Bone", "Purecrystal", "Carbalite Ore"],
+            "monsters": ["Gold Rathian", "Silver Rathalos", "Nargacuga"],
+            "quests": ["Hunt the Gold Rathian", "Slay the Silver Rathalos"],
+            "images": ["Caverns of El Dorado Image 1 URL", "Caverns of El Dorado Image 2 URL"],
+            "videos": ["Caverns of El Dorado Video 1 URL", "Caverns of El Dorado Video 2 URL"],
+            "references": ["Monster Hunter Wiki Caverns of El Dorado", "Official Game Guide"],
+            "notes": ["Bring traps to capture the elusive Nargacuga."]
+          },
+        {
+            "id": 10,
+            "zoneCount": 1,
+            "name": "Special Arena",
+            "category": "Special",
+            "type": "Arena",
+            "description": "An enclosed arena where hunters face off against powerful monsters.",
+            "map": "Special Arena Map URL",
+            "hazards": ["None"],
+            "materials": ["Arena Coins", "Special Arena Tickets", "Elder Dragon Blood"],
+            "monsters": ["Various"],
+            "quests": ["Arena Quest 1", "Arena Quest 2"],
+            "images": ["Special Arena Image 1 URL", "Special Arena Image 2 URL"],
+            "videos": ["Special Arena Video 1 URL", "Special Arena Video 2 URL"],
+            "references": ["Monster Hunter Wiki Special Arena", "Official Game Guide"],
+            "notes": ["Use provided equipment in the arena."]
+          },
+        {
+            "id": 11,
+            "zoneCount": 1,
+            "name": "Arena",
+            "category": "Special",
+            "type": "Arena",
+            "description": "An enclosed arena where hunters face off against powerful monsters.",
+            "map": "Arena Map URL",
+            "hazards": ["None"],
+            "materials": ["Arena Coins", "Special Arena Tickets", "Elder Dragon Blood"],
+            "monsters": ["Various"],
+            "quests": ["Arena Quest 1", "Arena Quest 2"],
+            "images": ["Arena Image 1 URL", "Arena Image 2 URL"],
+            "videos": ["Arena Video 1 URL", "Arena Video 2 URL"],
+            "references": ["Monster Hunter Wiki Arena", "Official Game Guide"],
+            "notes": ["Use provided equipment in the arena."]
+          },
+        {
+            "id": 12,
+            "zoneCount": 17,
+            "name": "Hoarfrost Reach",
+            "category": "",
+            "type": "Snowy Tundra",
+            "description": "A vast frozen tundra with icy caves and towering icebergs.",
+            "map": "Hoarfrost Reach Map URL",
+            "hazards": ["Deep Snow", "Avalanches"],
+            "materials": ["Purecrystal", "Dragonvein Crystal", "Snow Herb"],
+            "monsters": ["Beotodus", "Barioth", "Velkhana"],
+            "quests": ["Hunt the Beotodus", "Slay the Velkhana"],
+            "images": ["Hoarfrost Reach Image 1 URL", "Hoarfrost Reach Image 2 URL"],
+            "videos": ["Hoarfrost Reach Video 1 URL", "Hoarfrost Reach Video 2 URL"],
+            "references": ["Monster Hunter Wiki Hoarfrost Reach", "Official Game Guide"],
+            "notes": ["Bring hot drinks to counter the cold."]
+          },
+        {
+            "id": 13,
+            "zoneCount": 15,
+            "name": "Guiding Lands",
+            "category": "",
+            "type": "Mystical",
+            "description": "A realm where different regions merge, hosting a wide array of creatures.",
+            "map": "Guiding Lands Map URL",
+            "hazards": ["Turf Wars", "Environmental Hazards"],
+            "materials": ["Elder Dragon Bone", "Spiritvein Crystal", "Large Wyvern Gem"],
+            "monsters": ["Savage Deviljho", "Tempered Kirin", "Ruiner Nergigante"],
+            "quests": ["Hunt the Savage Deviljho", "Slay the Tempered Kirin"],
+            "images": ["Guiding Lands Image 1 URL", "Guiding Lands Image 2 URL"],
+            "videos": ["Guiding Lands Video 1 URL", "Guiding Lands Video 2 URL"],
+            "references": ["Monster Hunter Wiki Guiding Lands", "Official Game Guide"],
+            "notes": ["Monsters can turf war with each other."]
+          },
+        {
+            "id": 14,
+            "zoneCount": 1,
+            "name": "Secluded Valley",
+            "category": "",
+            "type": "Valley",
+            "description": "A hidden valley with lush vegetation, perfect for ambushing prey.",
+            "map": "Secluded Valley Map URL",
+            "hazards": ["Steep Cliffs", "Hidden Pits"],
+            "materials": ["Ancient Berries", "Prism Sootstone", "Heavenly Crystal"],
+            "monsters": ["Nargacuga", "Yian Garuga", "Zinogre"],
+            "quests": ["Hunt the Nargacuga", "Slay the Yian Garuga"],
+            "images": ["Secluded Valley Image 1 URL", "Secluded Valley Image 2 URL"],
+            "videos": ["Secluded Valley Video 1 URL", "Secluded Valley Video 2 URL"],
+            "references": ["Monster Hunter Wiki Secluded Valley", "Official Game Guide"],
+            "notes": ["Stay vigilant for surprise attacks."]
+          },
+        {
+            "id": 0,
+            "zoneCount": 0,
+            "name": "Astera",
+            "category": "Settlement",
+            "type": "Forest",
+            "summary": "Astera (Japanese アステラ) is a settlement first introduced in Monster Hunter: World. It is the home of the Research Commission in the New World. Your headquarters in Monster Hunter: World, Astera will be where you do everything from accepting quests, to crafting armor, to getting drunk with your friends in the gathering hub.",
+            "about": "With the Guild at it's core, the Research Commission was formed in order to solve the mystery of the Elder Crossings. The base of their research activities is here in Astera It has been forty years since the First Fleet arrived and established this as a major stronghold, which was built by the hands, skills, efforts, and labor of many people. The First Fleet was deployed in pursuit of Kushala Daora. During a storm, the crew had a chance encounter with a mysterious Elder Dragon. The ship was split and tossed on top of a cliff, but it still eventually became a foothold for research projects. What's more, the waterfall flowing right below it turned out to be a stroke of good luck for the First Fleet. The First Fleet found it difficult to secure enough resources to upgrade their base at first and expanded the base by recycling their ship. They had no choice but to wait for further deployments to do any full-scale work, however, so they poured their efforts into reinforcing the ship atop the cliff.",
+            "description": "Astera is built primarily out of wood, some taken from the very ships that brought the Research Commission to the New World. It sits below a waterfall between the Ancient Forest and Wildspire Waste. Astera is more of a base than a village, built to support the Hunters and researchers as they explore the New World and its ecology. It is built in three primary tiers. Winding stairs and a waterwheel-powered series of chain pulleys serve to move people and supplies from one tier to the other quickly. The Tradeyard is the ground floor, containing docks, supply caches, research 'offices'(really more of a massive pile of books), a meeting area, and an Ancient Tree. Some of the former ships also serve as bunks for hunters new to the area. The second tier contains the Workshop, where weapons and equipment are developed, and the Canteen, which serves food. Lodging for veteran New World hunters can also be found here, as can a training area.",
+            "map": "Ancient Forest Map URL",
+            "hazards": [
+                "Falling Boulders",
+                "Vines"
+            ],
+            "materials": [
+                "Herbs",
+                "Honey",
+                "Ancient Berries"
+            ],
+            "monsters": [
+                "Great Jagras",
+                "Anjanath",
+                "Rathalos"
+            ],
+            "quests": [
+                "Hunt the Great Jagras",
+                "Capture the Anjanath"
+            ],
+            "images": [
+                "Ancient Forest Image 1 URL",
+                "Ancient Forest Image 2 URL"
+            ],
+            "videos": [
+                "Ancient Forest Video 1 URL",
+                "Ancient Forest Video 2 URL"
+            ],
+            "references": [
+                {
+                    "website-name": "FextraLife",
+                    "url": "https://monsterhunterworld.wiki.fextralife.com/Locations"
+                },
+                {
+                    "website-name": "IGN",
+                    "url": "https://www.ign.com/wikis/monster-hunter-world/Locations"
+                },
+                {
+                    "website-name": "Fandom",
+                    "url": "https://monsterhunter.fandom.com/wiki/Astera"
+                }
+            ],
+            "notes": [
+                ""
+            ]
+        },
+        {
+            "id": 0,
+            "zoneCount": 0,
+            "name": "Research Base",
+            "category": "Settlement",
+            "type": "Forest",
+            "description": "A lush, ancient forest with towering trees and diverse wildlife.",
+            "map": "Ancient Forest Map URL",
+            "hazards": [
+                "Falling Boulders",
+                "Vines"
+            ],
+            "materials": [
+                "Herbs",
+                "Honey",
+                "Ancient Berries"
+            ],
+            "monsters": [
+                "Great Jagras",
+                "Anjanath",
+                "Rathalos"
+            ],
+            "quests": [
+                "Hunt the Great Jagras",
+                "Capture the Anjanath"
+            ],
+            "images": [
+                "Ancient Forest Image 1 URL",
+                "Ancient Forest Image 2 URL"
+            ],
+            "videos": [
+                "Ancient Forest Video 1 URL",
+                "Ancient Forest Video 2 URL"
+            ],
+            "references": [
+                "Monster Hunter Wiki Ancient Forest",
+                "Official Game Guide"
+            ],
+            "notes": [
+                "Watch out for Rathalos in area 12"
+            ]
+        },
+        {
+            "id": 0,
+            "zoneCount": 0,
+            "name": "Canteen",
+            "category": "",
+            "type": "Forest",
+            "description": "A lush, ancient forest with towering trees and diverse wildlife.",
+            "map": "Ancient Forest Map URL",
+            "hazards": [
+                "Falling Boulders",
+                "Vines"
+            ],
+            "materials": [
+                "Herbs",
+                "Honey",
+                "Ancient Berries"
+            ],
+            "monsters": [
+                "Great Jagras",
+                "Anjanath",
+                "Rathalos"
+            ],
+            "quests": [
+                "Hunt the Great Jagras",
+                "Capture the Anjanath"
+            ],
+            "images": [
+                "Ancient Forest Image 1 URL",
+                "Ancient Forest Image 2 URL"
+            ],
+            "videos": [
+                "Ancient Forest Video 1 URL",
+                "Ancient Forest Video 2 URL"
+            ],
+            "references": [
+                "Monster Hunter Wiki Ancient Forest",
+                "Official Game Guide"
+            ],
+            "notes": [
+                "Watch out for Rathalos in area 12"
+            ]
+        },
+        {
+            "id": 0,
+            "zoneCount": 0,
+            "name": "Smithy",
+            "category": "",
+            "type": "Forest",
+            "description": "A lush, ancient forest with towering trees and diverse wildlife.",
+            "map": "Ancient Forest Map URL",
+            "hazards": [
+                "Falling Boulders",
+                "Vines"
+            ],
+            "materials": [
+                "Herbs",
+                "Honey",
+                "Ancient Berries"
+            ],
+            "monsters": [
+                "Great Jagras",
+                "Anjanath",
+                "Rathalos"
+            ],
+            "quests": [
+                "Hunt the Great Jagras",
+                "Capture the Anjanath"
+            ],
+            "images": [
+                "Ancient Forest Image 1 URL",
+                "Ancient Forest Image 2 URL"
+            ],
+            "videos": [
+                "Ancient Forest Video 1 URL",
+                "Ancient Forest Video 2 URL"
+            ],
+            "references": [
+                "Monster Hunter Wiki Ancient Forest",
+                "Official Game Guide"
+            ],
+            "notes": [
+                "Watch out for Rathalos in area 12"
+            ]
+        },
+        {
+            "id": 0,
+            "zoneCount": 0,
+            "name": "Seliana",
+            "category": "",
+            "type": "Forest",
+            "description": "A lush, ancient forest with towering trees and diverse wildlife.",
+            "map": "Ancient Forest Map URL",
+            "hazards": [
+                "Falling Boulders",
+                "Vines"
+            ],
+            "materials": [
+                "Herbs",
+                "Honey",
+                "Ancient Berries"
+            ],
+            "monsters": [
+                "Great Jagras",
+                "Anjanath",
+                "Rathalos"
+            ],
+            "quests": [
+                "Hunt the Great Jagras",
+                "Capture the Anjanath"
+            ],
+            "images": [
+                "Ancient Forest Image 1 URL",
+                "Ancient Forest Image 2 URL"
+            ],
+            "videos": [
+                "Ancient Forest Video 1 URL",
+                "Ancient Forest Video 2 URL"
+            ],
+            "references": [
+                "Monster Hunter Wiki Ancient Forest",
+                "Official Game Guide"
+            ],
+            "notes": [
+                "Watch out for Rathalos in area 12"
+            ]
+        }
+    ]
+}
