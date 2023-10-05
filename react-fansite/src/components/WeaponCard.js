@@ -8,7 +8,7 @@ export default function WeaponCard({weapon}){
 						className='card-img-top'
 						style={{ height: '250px', objectFit: 'cover' }}
 						src={weapon.assets}
-						alt="weapon-img"
+						alt = {`weapon-img-${weapon.name}`}
 					/>
                     </div>
                     <h2 className='card-title fs-4'>Name: {weapon.name}</h2>
