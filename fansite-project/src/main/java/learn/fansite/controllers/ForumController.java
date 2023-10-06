@@ -35,5 +35,24 @@ public class ForumController {
         return ErrorResponse.build(result);
     }
 
-    @PutMapping
+    @PutMapping("/{forumId}")
+    public ResponseEntity<Object> update(@PathVariable int forumId, @RequestBody Forum forum){
+        if(forumId != forum.getForumId()){
+            return new ResponseEntity<>(HttpStatus.CONFLICT);
+        }
+        Result<Forum> result = service.update(forum);
+        if(result.isSuccess()){
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }
+
+        return ErrorResponse.build(result);
+    }
+
+    @DeleteMapping("/{forumId}")
+    public ResponseEntity<Void> deleteById(@PathVariable int forumId){
+        if(service.deleteById(forumId)){
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }
+        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+    }
 }
