@@ -73,12 +73,12 @@ public class ForumService {
         }
 
         if(forum.getPostDate() == null){
-            result.addMessage("postContent is required.", ResultType.INVALID);
+            result.addMessage("postDate is required.", ResultType.INVALID);
         }
         /**
          * TODO: Validation conditions
          * - only need null check?
-         * - using spring boot validaition.
+         * - using spring boot validation.
          * - string character length validation?
          */
 
