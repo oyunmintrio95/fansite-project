@@ -6,12 +6,19 @@ export default function ForumForm({ fetchPosts }) {
 
     const [post, setPost] = useState([]);
 
-    // const [formValues, setFormValues] = useState({
-    //     forumName: "",
-    //     title: "",
-    //     postContent: "",
-    //     postDate: ""
-    // });
+    const [formValues, setFormValues] = useState({
+        forumName: "",
+        title: "",
+        postDate: "",
+        postContent: ""
+    });
+
+    const [resetForm, setResetForm] = useState({
+        fullName: "",
+        address: "",
+        number: "",
+        occupation: ""
+    });
 
     const [errors, setErrors] = useState([]);
     const navigate = useNavigate();
