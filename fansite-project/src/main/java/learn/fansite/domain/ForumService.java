@@ -3,8 +3,10 @@ package learn.fansite.domain;
 import learn.fansite.data.ForumRepository;
 import learn.fansite.models.Forum;
 import learn.fansite.domain.Validations.*;
+import org.springframework.cglib.core.Local;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @Service
@@ -17,6 +19,7 @@ public class ForumService {
     public Forum findById(int forumId){return repository.findById(forumId);}
 
     public Result<Forum> add(Forum forum){
+        forum.setPostDate(LocalDate.now());
         Result<Forum> result = validate(forum);
         if(!result.isSuccess()){
             return result;
