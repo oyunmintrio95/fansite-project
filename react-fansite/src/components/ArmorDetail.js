@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 import SkillsDetail from './SkillsDetail';
 
@@ -177,6 +177,10 @@ export default function ArmorDetail(){
                     </div>
                     :<SkillsDetail skills = {armor.skills} />
                 }
+            </div>
+
+            <div>
+                <Link className="btn btn-primary" to="/armors">Back</Link>
             </div>
 
                 
