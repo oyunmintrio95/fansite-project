@@ -20,7 +20,8 @@ public class ForumJdbcTemplateRepository implements ForumRepository{
     public List<Forum> findAll() {
         final String sql = """
                             select forum_id, forum_name, title, post_content, post_date
-                            from forum;
+                            from forum
+                            order by forum_id desc;
                             """;
         return jdbcTemplate.query(sql, new ForumMapper());
     }

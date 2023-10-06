@@ -1,4 +1,4 @@
-import ArmorCard from "../ArmorCard";
+import ArmorCard from "../armors/ArmorCard";
 import { Link, useLocation } from "react-router-dom";
 
 export default function ArmorHead(){

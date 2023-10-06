@@ -9,8 +9,15 @@ export default function ForumForm() {
     const [formValues, setFormValues] = useState({
         forumName: "",
         title: "",
-        postContent: "",
-        postDate: ""
+        postDate: "",
+        postContent: ""
+    });
+
+    const [resetForm, setResetForm] = useState({
+        fullName: "",
+        address: "",
+        number: "",
+        occupation: ""
     });
 
     const [errors, setErrors] = useState([]);
@@ -56,7 +63,6 @@ export default function ForumForm() {
                 setErrors([errs]);
             }
         });;
-
     }
 
     return (
