@@ -28,11 +28,7 @@ export default function ForumForm({ fetchPosts}) {
             const next = { ...previous };
             next[evt.target.name] = evt.target.value;
             return next;
-<<<<<<< HEAD
-        });  
-=======
         });
->>>>>>> 19957ae0a80a5eb1c752be11cb10ac11ccf08ef8
         
     }
 
