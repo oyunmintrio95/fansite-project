@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 //import { useForm } from "react-hook-form";
 
-export default function ForumForm() {
+export default function ForumForm({ fetchPosts}) {
 
     const [post, setPost] = useState([]);
 
@@ -28,7 +28,11 @@ export default function ForumForm() {
             const next = { ...previous };
             next[evt.target.name] = evt.target.value;
             return next;
+<<<<<<< HEAD
         });  
+=======
+        });
+>>>>>>> 19957ae0a80a5eb1c752be11cb10ac11ccf08ef8
         
     }
 
@@ -45,7 +49,7 @@ export default function ForumForm() {
         fetch("http://localhost:8080/forum", config)
         .then(response => {
             if (response.ok) {
-                navigate("/forum");
+                fetchPosts();
             } else {
                 return response.json();
             }

@@ -6,15 +6,17 @@ export default function Forum(){
 
     const [posts, setPosts] = useState([]);
 
+    const fetchPosts = async () => {
+        const response = await fetch("http://localhost:8080/forum");
+        if (response.ok) {
+            setPosts(await response.json());
+        } else {
+            setPosts([]);
+        }
+    };
+
     useEffect(() => {
-        const fetchPosts = async () => {
-            const response = await fetch("http://localhost:8080/forum");
-            if (response.ok) {
-                setPosts(await response.json());
-            } else {
-                setPosts([]);
-            }
-        };
+        
 
         fetchPosts();
     }, []);
@@ -23,7 +25,7 @@ export default function Forum(){
     return (
         <>
             <h1>Ye Olde Forum</h1>
-            <ForumForm />
+            <ForumForm fetchPosts={fetchPosts}/>
             <ForumPostList posts={posts} />
         </>
         
