@@ -1,5 +1,5 @@
 import { useState } from "react";
-import data from '../data/locations.json';
+import data from '../../data/locations.json';
 import LocationMapCard from "./LocationMapCard";
 
 export default function LocationMaps({locationMap}){

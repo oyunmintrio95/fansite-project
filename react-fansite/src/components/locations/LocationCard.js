@@ -1,5 +1,5 @@
-import imageph from './image-ph.jpg';
-import mapph from './map-ph.jpg';
+import imageph from '../image-ph.jpg';
+import mapph from '../map-ph.jpg';
 import { Link } from "react-router-dom";
 
 export default function LocationCard({location}){
