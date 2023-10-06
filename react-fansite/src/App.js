@@ -45,8 +45,7 @@ function App() {
             <Route path='/locations/:locationId' element={<LocationDetail />} />
             <Route path='/weapons' element={<WeaponList />} />
             <Route path='/weapons/:weaponId' element={<WeaponDetail />} />
-            <Route path='/forum' element={<ForumList />} />
-            <Route path='/forum/add' element={<ForumForm />} />
+            <Route path='/forum' element={<Forum />} />
             <Route path='/about' element={<AboutList />} />
             <Route path='/error' element = {<GeneralError />} />
           </Routes>
