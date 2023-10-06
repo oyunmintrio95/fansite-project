@@ -59,24 +59,24 @@ export default function ArmorList(){
     return (
         <div className="mb-3">
             <h1 className="mb-3">Armors</h1>
-            <ul class="nav nav-pills mb-3">
-                <li class="nav-item">
-                <Link class="nav-link active" aria-current="page" to="/armors">All</Link>
+            <ul className="nav nav-pills mb-3">
+                <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to="/armors">All</Link>
                 </li>
-                <li class="nav-item">
-                <Link class="nav-link" to="/armors/head" state={{headList:{headList}}}>Head</Link>
+                <li className="nav-item">
+                <Link className="nav-link" to="/armors/head" state={{headList:{headList}}}>Head</Link>
                 </li>
-                <li class="nav-item">
-                <Link class="nav-link" to="/armors/chest" state={{chestList:{chestList}}}>Chest</Link>
+                <li className="nav-item">
+                <Link className="nav-link" to="/armors/chest" state={{chestList:{chestList}}}>Chest</Link>
                 </li>
-                <li class="nav-item">
-                <Link class="nav-link" to="/armors/waist" state={{waistList:{waistList}}}>Waist</Link>
+                <li className="nav-item">
+                <Link className="nav-link" to="/armors/waist" state={{waistList:{waistList}}}>Waist</Link>
                 </li>
-                <li class="nav-item">
-                <Link class="nav-link" to="/armors/legs" state={{legsList:{legsList}}}>Legs</Link>
+                <li className="nav-item">
+                <Link className="nav-link" to="/armors/legs" state={{legsList:{legsList}}}>Legs</Link>
                 </li>
-                <li class="nav-item">
-                <Link class="nav-link" to="/armors/gloves" state={{glovesList:{glovesList}}}>Gloves</Link>
+                <li className="nav-item">
+                <Link className="nav-link" to="/armors/gloves" state={{glovesList:{glovesList}}}>Gloves</Link>
                 </li>
                 
             </ul>
