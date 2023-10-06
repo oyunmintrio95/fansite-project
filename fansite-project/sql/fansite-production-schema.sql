@@ -12,8 +12,8 @@ create table about (
 
 create table forum (
 	forum_id int primary key auto_increment,
-    forum_name varchar(50) not null,
-    title varchar(50) not null,
-    post_content varchar(200) not null,
+    forum_name varchar(100) not null,
+    title varchar(100) not null,
+    post_content text not null,
     post_date date null
 );
