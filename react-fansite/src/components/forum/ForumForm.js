@@ -1,17 +1,17 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 //import { useForm } from "react-hook-form";
 
-export default function ForumForm({ fetchPosts}) {
+export default function ForumForm({ fetchPosts }) {
 
     const [post, setPost] = useState([]);
 
-    const [formValues, setFormValues] = useState({
-        forumName: "",
-        title: "",
-        postContent: "",
-        postDate: ""
-    });
+    // const [formValues, setFormValues] = useState({
+    //     forumName: "",
+    //     title: "",
+    //     postContent: "",
+    //     postDate: ""
+    // });
 
     const [errors, setErrors] = useState([]);
     const navigate = useNavigate();
@@ -57,6 +57,7 @@ export default function ForumForm({ fetchPosts}) {
             }
         });;
 
+        evt.target.reset();
     }
 
     return (

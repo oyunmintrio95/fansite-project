@@ -21,22 +21,13 @@ export default function LocationDetail(){
     }
 
     const [ location, setLocation] = useState(`data.locations.location`);
-console.log(location.name);
+    console.log(data.locations.location.name);
     const navigate = useNavigate();
     const { locationId } = useParams();
-    // console.log(location.images[0].url);
-    // console.log(location.monsters[0]);
 
     return(
         <>
             <h1 className='mt-3 mb-3'> {location.name} Details</h1>
-
-            {/* <div className="row">
-                <img 
-                    className='card-img-top'
-                    style={{height: '550px', objectFit: 'cover'}}
-                    src={phCheck(location.images[0].url)} alt={`${location.images[0].altText}`} />
-             </div> */}
 
             <div className='mb-3'>
                 <label className='form-label'>Name</label>
