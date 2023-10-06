@@ -9,7 +9,7 @@
             "description": "A lush, ancient forest with towering trees and diverse wildlife.",
             "summary": "Home to a variety of flora, fauna, and monsters, this lush green prehistoric-esque forest houses many of Monster Hunter World's beasties. It features vines that can be used to trap monsters, as well as other plants that can double as weapons. Many monsters have been spotted here including Anjanath and the dreaded flagship Rathalos.",
             "about": "Consists of a massive forest, but is also comprised of clearings close to the coast and a combination of cliffs and massive trees that creates a vast vertical space.",
-            "map": [
+            "maps": [
                 "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/ancient-forest-lvl3.jpg",
                 "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/MHW-AncientForest.jpg",
                 "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/ancient-forest-lvl2.jpg"
@@ -35,7 +35,7 @@
             "images": [{
                 "id": 1,
                 "title": "Ancient Forest",
-                "alt-text": "Ancient Forest",
+                "altText": "Ancient Forest",
                 "url": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/a/a1/MHW-Ancient_Forest_Artwork_001.jpg",
                 "citation": "https://www.ign.com/wikis/monster-hunter-world/Locations"
             }
@@ -71,7 +71,7 @@
             "description": "A vibrant coral-covered landscape with towering spires.",
             "summary": "One of Monster Hunter's more visual striking new maps, the Coral Highlands exist as if an undersea reef were stripped of its water and none of its beauty. A vast landscape like that of the ocean floor Many species of coral lay across a vast landscape of steep cliffs and dangerous depths. Monsters like Paolumu and Legiana call this ominous beauty home.",
             "about": "The Coral Highlands (Japanese 陸珊瑚の台地) consists of a vast landscape like that of the ocean floor, the most notorious feature is the many species of coral, as its name implies. This area is comprised of steep cliffs that form a highland, hunters will traverse the colorful highlands and ominous lower levels to achieve their objectives.",
-            "map": [
+            "maps": [
                 "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/coral-highlands-lvl1.jpg",
                 "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/coral-highlands-lvl2.jpg",
                 "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/coral-highlands-lvl3.jpg"
@@ -84,14 +84,14 @@
                 {
                     "id": 1,
                     "title": "Coral Highlands",
-                    "alt-text": "Coral Highlands",
+                    "altText": "Coral Highlands",
                     "url": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/4/4e/MHW-Coral_Highlands_Artwork_001.jpg",
                     "citation": "https://www.ign.com/wikis/monster-hunter-world/Locations"
                 },
                 {
                 "id": 2,
                 "title": "Mister Topsides Mining Guide",
-                "alt-text": "Mister Topsides Mining Guide",
+                "altText": "Mister Topsides Mining Guide",
                 "url": "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/coral-highlands-farm-small.jpg",
                 "citation": "https://monsterhunterworld.wiki.fextralife.com/Coral+Highlands"
             }],
@@ -121,7 +121,7 @@
             "description": "A vast, arid desert with shifting sands and unique flora.",
             "summary": "A vast desert with swampy plains created from the water runoff of the Ancient Forest, Wildspire Waste is a brutal environment. Ant mounds dot the landscape that some monsters like Diablos call home. Hunters who venture into this landscape of sandy dunes, large cliffs, and swamps will need to harden themselves to the elements just as the monsters who call this place home have.",
             "about": "Wildspire Waste (大蟻塚の荒地) is a large desert featuring dunes and unexpected swamps, with poor vegetation and rare monsters that can withstand the harsh conditions of life in the Wastes. A massive strip of parched land conjoined with a swampland that takes in water from the Ancient Forest. Ant colonies have built massive spires within the desert, while varied vegetation has sprung up along many watering holes. This locale is now home to creatures that take advantage of the two unique, coexisting ecosystems.",
-            "map": ["https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/MHW-WildspireWaste.png", "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/wildspire-waste-lvl1.jpg", "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/wildspire-waste-lvl3.jpg"],
+            "maps": ["https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/MHW-WildspireWaste.png", "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/wildspire-waste-lvl1.jpg", "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/wildspire-waste-lvl3.jpg"],
             "hazards": ["Quicksand", "Mud"],
             "materials": ["Dragonite Ore", "Barroth Ridge", "Inferno Sac"],
             "monsters": ["Barroth", "Diablos", "Rathian"],
@@ -130,14 +130,14 @@
             {
                 "id": 1,
                 "title": "Wildspire Waste",
-                "alt-text": "Wildspire Waste",
+                "altText": "Wildspire Waste",
                 "url": "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/monster-hunter-world-wildspire-waste-location-information-300.jpg",
                 "citation": "https://monsterhunterworld.wiki.fextralife.com/Wildspire+Waste"
             },
             {
                 "id": 2,
                 "title": "Wildspire Waste",
-                "alt-text": "Wildspire Waste",
+                "altText": "Wildspire Waste",
                 "url": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/9/9c/MHW-Wildspire_Waste_Screenshot_007.jpg",
                 "citation": "https://www.ign.com/wikis/monster-hunter-world/Locations"
             }],
@@ -167,7 +167,7 @@
             "description": "A dark and foreboding cavern filled with toxic miasma and bizarre creatures.",
             "summary": "A disgusting marsh of the dead rotting corpses of other monsters, the Rotten Vale looks to be home to some of the more adaptive monsters or those who just don't care (looking at you Odogaron). It features bones and corpses everywhere, leaving a poisonous gas in the air that can drain the health of hunters. Fortunately, a few quick-fire projectiles will temporarily leave the area breathable for the fight.",
             "about": "The Rotten Vale is a massive area covered in the rotting bones of Elder Dragons and other monsters that have come there to die. It sits at the bottom of the Coral Highlands, though perhaps it is more accurate to say the Coral Highlands grows from the Rotten Vale.",
-            "map": ["https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/rotten-vale-lvl1.jpg","https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/rotten-vale-lvl2.jpg","https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/rotten-vale-lvl3.jpg"],
+            "maps": ["https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/rotten-vale-lvl1.jpg","https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/rotten-vale-lvl2.jpg","https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/rotten-vale-lvl3.jpg"],
             "hazards": ["Effluvium", "Toxic Pools"],
             "materials": ["Dragonbone Relic", "Beryl Ore", "Omniplegia Sac"],
             "monsters": ["Odogaron", "Radobaan", "Great Girros"],
@@ -175,7 +175,7 @@
             "images": [{
                 "id": 1,
                 "title": "Rotten Vale",
-                "alt-text": "Rotten Vale",
+                "altText": "Rotten Vale",
                 "url": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/4/46/MHW-Rotten_Vale_Screenshot_001.jpg",
                 "citation": "https://www.ign.com/wikis/monster-hunter-world/Locations"
             }],
@@ -192,7 +192,7 @@
             "description": "A fiery, volcanic region teeming with molten lava and powerful monsters.",
             "summary": "Elder's Recess is a volcanic region covered in either lava or crystals. You'll need a Cool Drink to traverse the hotter areas here.",
             "about": "",
-            "map": ["https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/elder-s-recess-level-2.jpg","https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/elder-s-recess-level-1.jpg"],
+            "maps": ["https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/elder-s-recess-level-2.jpg","https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/elder-s-recess-level-1.jpg"],
             "hazards": ["Lava Pools", "Brimstone"],
             "materials": ["Firecell Stone", "Dragonvein Crystal", "Elder Dragon Bone"],
             "monsters": ["Teostra", "Lunastra", "Nergigante"],
@@ -200,7 +200,7 @@
             "images": [{
                 "id": 1,
                 "title": "Elder's Recess",
-                "alt-text": "Elder's Recess",
+                "altText": "Elder's Recess",
                 "url": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/a/a6/Elder%27s_Recess.jpg",
                 "citation": "https://www.ign.com/wikis/monster-hunter-world/Locations"
             }],
@@ -230,7 +230,7 @@
             "description": "A massive, deep canyon with precarious ledges and complex ecosystems.",
             "summary": "Great Ravine (Japanese Name) is the theater of the first battle between the Hunter and the Elder Dragon Zorah Magdaros.",
             "about": "",
-            "map": "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/great-ravine-map.jpg",
+            "maps": "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/great-ravine-map.jpg",
             "hazards": ["Falling Debris", "Strong Winds"],
             "materials": ["Carbalite Ore", "Dragonite Ore", "Monster Bone L"],
             "monsters": ["Rathian", "Bazelgeuse", "Legiana"],
@@ -239,7 +239,7 @@
                 {
                     "id": 1,
                     "title": "Great Ravine",
-                    "alt-text": "Great Ravine",
+                    "altText": "Great Ravine",
                     "url": "https://static.wikia.nocookie.net/monsterhunter/images/5/59/MHW-Great_Ravine_Screenshot_001.png",
                     "citation": "https://monsterhunter.fandom.com/wiki/Great_Ravine"
                 }
@@ -270,7 +270,14 @@
             "description": "A place where multiple elements converge, creating a unique and mystical environment.",
             "summary": "Confluence of Fates (Japanese Name) is a ?? - This place is located deep inside the giant crystal in Elder's Recess and it's where the strange source of power is emanating. The player goes here accompanied by the Admiral and the Seeker to uncover the truth about the New World.",
             "about": "",
-            "map": "map-ph.jpg",
+            "maps": [
+            {
+                    "id": 0,
+                    "title": "I am not a map. I am a placeholder.",
+                    "altText": "There is nothing to see here.",
+                    "url": "map-ph.jpg",
+                    "citation": "Jay Sprout king of all designers"
+                }],
             "hazards": ["Elemental Surges", "Teleportation Pads"],
             "materials": ["Elder Dragon Bone", "Purecrystal", "Daora Dragon Scale"],
             "monsters": ["Kushala Daora", "Namielle", "Xeno'jiiva"],
@@ -279,7 +286,7 @@
                 {
                     "id": 1,
                     "title": "Confluence of Fates",
-                    "alt-text": "Confluence of Fates",
+                    "altText": "Confluence of Fates",
                     "url": "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/xenojiiva-monster-hunter-world-large-monster.jpg",
                     "citation": "https://monsterhunterworld.wiki.fextralife.com/Confluence+of+Fates"
                 }
@@ -310,7 +317,7 @@
             "description": "A colossal, winding river that courses through the New World, connecting various regions.",
             "summary": "Everstream (Japanese Name) is an underground area in the New World where the Research Commission will try to stop Zorah Magdaros from reaching the mysterious source of power. It's a gigantic cave connected to the ocean with molten lava covering its walls and enormous stalactites awaiting to fall. That is where the Research Commission built the Great Barrier and brought the Dragonslayer to put an end to Zorah's journey.",
             "about": "This area has only one campsite on a cliffside. The final fight against Zorah Magdaros takes place here. The area is a focal point for the bioenergy of the New World. It is an underground region, with pools of lava and burning rock contrasting with the dark stone roof and the water on its cavernous floor, leading out to the sea. Also in this area is a barrier that players defend with cannons and ballistae, and a passage created by Zorah Magdaros, which leads to the Elder's Recess. It is similar to the Great Ravine, in the respect that only Zorah Magdaros is fought here.",
-            "map": ["https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/everstream-map.jpg"],
+            "maps": ["https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/everstream-map.jpg"],
             "hazards": ["Strong Currents", "Waterfalls"],
             "materials": ["Dragonvein Crystal", "Fulgurbug", "Carbalite Ore"],
             "monsters": ["Zinogre", "Stygian Zinogre", "Fulgur Anjanath"],
@@ -319,7 +326,7 @@
                 {
                     "id": 1,
                     "title": "Everstream",
-                    "alt-text": "Everstream",
+                    "altText": "Everstream",
                     "url": "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/everstream-header.jpg",
                     "citation": "https://monsterhunterworld.wiki.fextralife.com/Everstream"
                 }
@@ -350,7 +357,14 @@
             "description": "A mysterious underground cavern said to be filled with untold treasures.",
             "summary": "The Caverns of El Dorado are a peculiar network of caverns shaped and influenced both by the Everstream and the minerals that Kulve Taroth has collected over the years. Kulve Taroth's nesting ground—as yet undiscovered—is rumored to rest within the deepest region of the caverns, from which tremendous geothermal energies seem to emanate.",
             "about": "",
-            "map": "map-ph.jpg",
+            "maps": [
+            {
+                    "id": 0,
+                    "title": "I am not a map. I am a placeholder.",
+                    "altText": "There is nothing to see here.",
+                    "url": "map-ph.jpg",
+                    "citation": "Jay Sprout king of all designers"
+                }],
             "hazards": ["Falling Rocks", "Treacherous Terrain"],
             "materials": ["Elder Dragon Bone", "Purecrystal", "Carbalite Ore"],
             "monsters": ["Gold Rathian", "Silver Rathalos", "Nargacuga"],
@@ -359,7 +373,7 @@
                 {
                     "id": 1,
                     "title": "Caverns of El Dorado",
-                    "alt-text": "Caverns of El Dorado",
+                    "altText": "Caverns of El Dorado",
                     "url": "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/kulve_taroth-monster-hunter-world-large-monster.jpg",
                     "citation": "https://monsterhunterworld.wiki.fextralife.com/Caverns+of+El+Dorado"
                 }
@@ -390,7 +404,7 @@
             "description": "An enclosed arena where hunters face off against powerful monsters.",
             "summary": "Special Arena (Japanese Name) is a small place niched in a dry and rocky ravine, the Research Commission uses it to have hunters fight with captured monsters and study them. The camp is linked to the arena by a ropelift allowing the Hunter to fly above the abîme safely. The Special Arena is composed of two ground level in a circular shape, rigged with tools and traps to aids hunters in dealing with their foes.",
             "about": "Located within the Great Ravine, this arena features several contraptions that can aid Hunters in battle, including ballistae, cannons, a Dragonator and a pile of boulders that can be dropped on a monster. A short zipline journey is required to travel from the Camp to the main arena, which is accessed by crawling through a small crack in the rock face. The lack of an easier entrance is likely to prevent monsters from escaping.",
-            "map": ["https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/special-arena-map.jpg"],
+            "maps": ["https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/special-arena-map.jpg"],
             "hazards": ["None"],
             "materials": ["Arena Coins", "Special Arena Tickets", "Elder Dragon Blood"],
             "monsters": ["Various"],
@@ -399,7 +413,7 @@
                 {
                     "id": 1,
                     "title": "Special Arena",
-                    "alt-text": "Special Arena",
+                    "altText": "Special Arena",
                     "url": "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/special-arena-header.jpg",
                     "citation": "https://monsterhunterworld.wiki.fextralife.com/Special+Arena"
                 }
@@ -430,7 +444,7 @@
             "description": "An enclosed arena where hunters face off against powerful monsters.",
             "summary": "There is no Canteen/Camp to eat at.",
             "about": "A large circular arena located on the outskirts of Astera. It features a massive metal gate that can be deployed to separate monsters from Hunters or even other monsters, as well as several net-covered pillars that can be climbed to allow combatants to perform aerial attacks. The Arena is accessed via a partially beached ship that serves as a camp for Hunters preparing for battle.",
-            "map": ["https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/mhw-arena-layout.png"],
+            "maps": ["https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/mhw-arena-layout.png"],
             "hazards": ["None"],
             "materials": ["Arena Coins", "Special Arena Tickets", "Elder Dragon Blood"],
             "monsters": ["Various"],
@@ -439,7 +453,7 @@
                 {
                     "id": 1,
                     "title": "Arena",
-                    "alt-text": "Arena",
+                    "altText": "Arena",
                     "url": "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/mhw-arena-entrance.png",
                     "citation": "https://monsterhunterworld.wiki.fextralife.com/Arena"
                 }
@@ -470,7 +484,7 @@
             "description": "A vast frozen tundra with icy caves and towering icebergs.",
             "summary": "",
             "about": "",
-            "map": ["https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/hoarfrostmap_layer2.png","https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/hoarfrostmap_layer1.png"],
+            "maps": ["https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/hoarfrostmap_layer2.png","https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/hoarfrostmap_layer1.png"],
             "hazards": ["Deep Snow", "Avalanches"],
             "materials": ["Purecrystal", "Dragonvein Crystal", "Snow Herb"],
             "monsters": ["Beotodus", "Barioth", "Velkhana"],
@@ -479,7 +493,7 @@
                 {
                     "id": 1,
                     "title": "Hoarfrost Reach",
-                    "alt-text": "Hoarfrost Reach",
+                    "altText": "Hoarfrost Reach",
                     "url": "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/hoarfrost-reach-location-icerborne-mhw-wiki-guide.jpg",
                     "citation": "https://monsterhunterworld.wiki.fextralife.com/Hoarfrost+Reach"
                 }
@@ -510,7 +524,15 @@
             "description": "A realm where different regions merge, hosting a wide array of creatures.",
             "summary": "",
             "about": "",
-            "map": "map-ph.jpg",
+            "maps": [
+                {
+                    "id": 0,
+                    "title": "I am not a map. I am a placeholder.",
+                    "altText": "There is nothing to see here.",
+                    "url": "map-ph.jpg",
+                    "citation": "Jay Sprout king of all designers"
+                }
+                ],
             "hazards": ["Turf Wars", "Environmental Hazards"],
             "materials": ["Elder Dragon Bone", "Spiritvein Crystal", "Large Wyvern Gem"],
             "monsters": ["Savage Deviljho", "Tempered Kirin", "Ruiner Nergigante"],
@@ -519,7 +541,7 @@
                 {
                     "id": 0,
                     "title": "I am not an image. I am a placeholder.",
-                    "alt-text": "There is nothing to see here.",
+                    "altText": "There is nothing to see here.",
                     "url": "image-ph.jpg",
                     "citation": "Jay Sprout king of all designers"
                 }
@@ -537,7 +559,14 @@
             "description": "A hidden valley with lush vegetation, perfect for ambushing prey.",
             "summary": "",
             "about": "",
-            "map": "map-ph.jpg",
+            "maps": [
+            {
+                    "id": 0,
+                    "title": "I am not a map. I am a placeholder.",
+                    "altText": "There is nothing to see here.",
+                    "url": "map-ph.jpg",
+                    "citation": "Jay Sprout king of all designers"
+                }],
             "hazards": ["Steep Cliffs", "Hidden Pits"],
             "materials": ["Ancient Berries", "Prism Sootstone", "Heavenly Crystal"],
             "monsters": ["Nargacuga", "Yian Garuga", "Zinogre"],
@@ -546,7 +575,7 @@
                 {
                     "id": 0,
                     "title": "I am not an image. I am a placeholder.",
-                    "alt-text": "There is nothing to see here.",
+                    "altText": "There is nothing to see here.",
                     "url": "image-ph.jpg",
                     "citation": "Jay Sprout king of all designers"
                 }
@@ -577,7 +606,14 @@
             "summary": "Astera (Japanese アステラ) is a settlement first introduced in Monster Hunter: World. It is the home of the Research Commission in the New World. Your headquarters in Monster Hunter: World, Astera will be where you do everything from accepting quests, to crafting armor, to getting drunk with your friends in the gathering hub.",
             "about": "With the Guild at it's core, the Research Commission was formed in order to solve the mystery of the Elder Crossings. The base of their research activities is here in Astera It has been forty years since the First Fleet arrived and established this as a major stronghold, which was built by the hands, skills, efforts, and labor of many people. The First Fleet was deployed in pursuit of Kushala Daora. During a storm, the crew had a chance encounter with a mysterious Elder Dragon. The ship was split and tossed on top of a cliff, but it still eventually became a foothold for research projects. What's more, the waterfall flowing right below it turned out to be a stroke of good luck for the First Fleet. The First Fleet found it difficult to secure enough resources to upgrade their base at first and expanded the base by recycling their ship. They had no choice but to wait for further deployments to do any full-scale work, however, so they poured their efforts into reinforcing the ship atop the cliff.",
             "description": "Astera is built primarily out of wood, some taken from the very ships that brought the Research Commission to the New World. It sits below a waterfall between the Ancient Forest and Wildspire Waste. Astera is more of a base than a village, built to support the Hunters and researchers as they explore the New World and its ecology. It is built in three primary tiers. Winding stairs and a waterwheel-powered series of chain pulleys serve to move people and supplies from one tier to the other quickly. The Tradeyard is the ground floor, containing docks, supply caches, research 'offices'(really more of a massive pile of books), a meeting area, and an Ancient Tree. Some of the former ships also serve as bunks for hunters new to the area. The second tier contains the Workshop, where weapons and equipment are developed, and the Canteen, which serves food. Lodging for veteran New World hunters can also be found here, as can a training area.",
-            "map": "map-ph.jpg",
+            "maps": [
+            {
+                    "id": 0,
+                    "title": "I am not a map. I am a placeholder.",
+                    "altText": "There is nothing to see here.",
+                    "url": "map-ph.jpg",
+                    "citation": "Jay Sprout king of all designers"
+                }],
             "hazards": [
                 "Falling Boulders",
                 "Vines"
@@ -600,7 +636,7 @@
                 {
                     "id": 1,
                     "title": "Astera",
-                    "alt-text": "Astera",
+                    "altText": "Astera",
                     "url": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/monster-hunter-world/b/b9/Screen_Shot_2018-01-28_at_3.01.08_PM.jpg",
                     "citation": "https://www.ign.com/wikis/monster-hunter-world/Locations"
                 }
@@ -636,7 +672,14 @@
             "description": "A lush, ancient forest with towering trees and diverse wildlife.",
             "summary": "The Reserach Base (Japanese 研究基地) is a base for the third fleet trapped in the Coral Highlands located somewhere around the Coral Highlands. With the help of the Hunter, the Research Commission uses it to reach the Rotten Vale. Once repaired, the Palicoes will use it as a base in preparation for their Safari.",
             "about": "",
-            "map": "map-ph.jpg",
+            "maps": [
+            {
+                    "id": 0,
+                    "title": "I am not a map. I am a placeholder.",
+                    "altText": "There is nothing to see here.",
+                    "url": "map-ph.jpg",
+                    "citation": "Jay Sprout king of all designers"
+                }],
             "hazards": [
                 "Falling Boulders",
                 "Vines"
@@ -659,7 +702,7 @@
                 {
                     "id": 1,
                     "title": "Research Base",
-                    "alt-text": "Research Base",
+                    "altText": "Research Base",
                     "url": "https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/research-base-placeholder.jpg",
                     "citation": "https://monsterhunterworld.wiki.fextralife.com/Research+Base"
                 }
@@ -695,7 +738,14 @@
             "description": "A lush, ancient forest with towering trees and diverse wildlife.",
             "summary": "",
             "about": "",
-            "map": "map-ph.jpg",
+            "maps": [
+            {
+                    "id": 0,
+                    "title": "I am not a map. I am a placeholder.",
+                    "altText": "There is nothing to see here.",
+                    "url": "map-ph.jpg",
+                    "citation": "Jay Sprout king of all designers"
+                }],
             "hazards": [
                 "Falling Boulders",
                 "Vines"
@@ -718,7 +768,7 @@
                 {
                     "id": 0,
                     "title": "I am not an image. I am a placeholder.",
-                    "alt-text": "There is nothing to see here.",
+                    "altText": "There is nothing to see here.",
                     "url": "image-ph.jpg",
                     "citation": "Jay Sprout king of all designers"
                 }
@@ -754,7 +804,14 @@
             "description": "A lush, ancient forest with towering trees and diverse wildlife.",
             "summary": "",
             "about": "",
-            "map": "map-ph.jpg",
+            "maps": [
+            {
+                    "id": 0,
+                    "title": "I am not a map. I am a placeholder.",
+                    "altText": "There is nothing to see here.",
+                    "url": "map-ph.jpg",
+                    "citation": "Jay Sprout king of all designers"
+                }],
             "hazards": [
                 "Falling Boulders",
                 "Vines"
@@ -777,7 +834,7 @@
                 {
                     "id": 0,
                     "title": "I am not an image. I am a placeholder.",
-                    "alt-text": "There is nothing to see here.",
+                    "altText": "There is nothing to see here.",
                     "url": "image-ph.jpg",
                     "citation": "Jay Sprout king of all designers"
                 }
@@ -813,7 +870,14 @@
             "description": "A lush, ancient forest with towering trees and diverse wildlife.",
             "summary": "",
             "about": "",
-            "map": "map-ph.jpg",
+            "maps": [
+            {
+                    "id": 0,
+                    "title": "I am not a map. I am a placeholder.",
+                    "altText": "There is nothing to see here.",
+                    "url": "map-ph.jpg",
+                    "citation": "Jay Sprout king of all designers"
+                }],
             "hazards": [
                 "Falling Boulders",
                 "Vines"
@@ -836,7 +900,7 @@
                 {
                     "id": 0,
                     "title": "I am not an image. I am a placeholder.",
-                    "alt-text": "There is nothing to see here.",
+                    "altText": "There is nothing to see here.",
                     "url": "image-ph.jpg",
                     "citation": "Jay Sprout king of all designers"
                 }
