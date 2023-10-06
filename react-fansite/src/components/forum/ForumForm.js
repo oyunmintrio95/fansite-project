@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useForm } from "react-hook-form";
 
 export default function ForumForm() {
 
@@ -8,21 +10,30 @@ export default function ForumForm() {
         postDate: "",
         postContent: ""
     });
+
+    const [resetForm, setResetForm] = useState({
+        fullName: "",
+        address: "",
+        number: "",
+        occupation: ""
+    });
+
     const [errors, setErrors] = useState([]);
+    const navigate = useNavigate();
 
     function handleChange(evt) {
-
         setPost(previous => {
             const next = { ...previous };
             next[evt.target.name] = evt.target.value;
-            return next;
+            
         });
-
+        
+        setResetForm();
+        return next;
     }
 
     function handleSubmit(evt) {
         evt.preventDefault();
-
         const config = {
             method: "POST",
             headers: {
@@ -34,7 +45,7 @@ export default function ForumForm() {
         fetch("http://localhost:8080/forum", config)
         .then(response => {
             if (response.ok) {
-                console.log("Yay it worked");
+                navigate("/forum");
             } else {
                 return response.json();
             }
@@ -52,7 +63,7 @@ export default function ForumForm() {
                 setErrors([errs]);
             }
         });;
-
+        reset();
     }
 
     return (

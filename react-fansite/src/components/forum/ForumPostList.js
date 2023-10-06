@@ -2,22 +2,11 @@ import ForumPost from "./ForumPost";
 import ForumTable from "./ForumTable";
 import { useEffect, useState } from "react";
 
-export default function ForumPostList() {
+export default function ForumPostList({posts}) {
 
-    const [posts, setPosts] = useState([]);
 
-    useEffect(() => {
-        const fetchPosts = async () => {
-            const response = await fetch("http://localhost:8080/forum");
-            if (response.ok) {
-                setPosts(await response.json());
-            } else {
-                setPosts([]);
-            }
-        };
 
-        fetchPosts();
-    }, []);
+    console.log(posts);
 
     return (
         <>
