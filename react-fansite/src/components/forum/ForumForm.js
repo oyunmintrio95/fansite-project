@@ -1,21 +1,16 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useForm } from "react-hook-form";
+//import { useForm } from "react-hook-form";
 
 export default function ForumForm() {
 
-    const [post, setPost] = useState({
+    const [post, setPost] = useState([]);
+
+    const [formValues, setFormValues] = useState({
         forumName: "",
         title: "",
-        postDate: "",
-        postContent: ""
-    });
-
-    const [resetForm, setResetForm] = useState({
-        fullName: "",
-        address: "",
-        number: "",
-        occupation: ""
+        postContent: "",
+        postDate: ""
     });
 
     const [errors, setErrors] = useState([]);
@@ -25,11 +20,9 @@ export default function ForumForm() {
         setPost(previous => {
             const next = { ...previous };
             next[evt.target.name] = evt.target.value;
-            
-        });
+            return next;
+        });  
         
-        setResetForm();
-        return next;
     }
 
     function handleSubmit(evt) {
@@ -63,7 +56,7 @@ export default function ForumForm() {
                 setErrors([errs]);
             }
         });;
-        reset();
+
     }
 
     return (
