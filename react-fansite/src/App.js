@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Ad
 
 import MonsterList from "./components/MonsterList";
 import AboutList from "./components/AboutList";
-import ArmorList from "./components/ArmorList";
+import ArmorList from "./components/armors/ArmorList";
 import WeaponList from "./components/WeaponList";
 import Forum from './components/forum/Forum';
 import LocationList from "./components/locations/LocationList";
@@ -10,7 +10,7 @@ import LocationDetail from './components/locations/LocationDetail';
 import Landing from "./components/Landing";
 import Nav from "./components/Nav";
 import GeneralError from './components/GeneralError';
-import ArmorDetail from './components/ArmorDetail';
+import ArmorDetail from './components/armors/ArmorDetail';
 
 import ArmorHead from './components/armors/ArmorHead';
 import ArmorGloves from './components/armors/ArmorGloves';
