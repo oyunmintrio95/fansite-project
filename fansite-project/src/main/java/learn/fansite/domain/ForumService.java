@@ -79,6 +79,7 @@ public class ForumService {
          * TODO: Validation conditions
          * - only need null check?
          * - using spring boot validaition.
+         * - string character length validation?
          */
 
         return result;
