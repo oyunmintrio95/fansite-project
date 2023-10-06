@@ -56,6 +56,7 @@ function App() {
             <Route path='/armors/legs' element={<ArmorLegs />} />
             <Route path='/armors/waist' element={<ArmorWaist />} />
 
+            {/* Weapon Routes */}
             <Route path='/weapons/great-sword' element={<WeaponGreatSword />} />
             <Route path='/weapons/long-sword' element={<WeaponLongSword />} />
             <Route path='/weapons/sword-and-shield' element={<WeaponSwordAndShield />} />
