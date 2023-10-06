@@ -31,10 +31,13 @@ class AboutJdbcTemplateRepositoryTest {
         assertEquals(topSecret, actual);
 
         actual = repository.findById(99);
-        assertEquals(null, actual);
+        assertNull(actual);
     }
 
     @Test
-    void findById() {
+    void shouldFindAll() {
+        List<About> about = repository.findAll();
+        assertNotNull(about);
+        assertEquals(2, about.size());
     }
 }

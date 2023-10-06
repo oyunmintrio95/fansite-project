@@ -11,11 +11,15 @@ import Landing from "./components/Landing";
 import Nav from "./components/Nav";
 import GeneralError from './components/GeneralError';
 import ArmorDetail from './components/ArmorDetail';
+
 import ArmorHead from './components/armors/ArmorHead';
 import ArmorGloves from './components/armors/ArmorGloves';
 import ArmorLegs from './components/armors/ArmorLegs';
 import ArmorWaist from './components/armors/ArmorWaist';
 import ArmorChest from './components/armors/ArmorChest';
+
+import WeaponDetail from './components/WeaponDetail';
+
 
 function App() {
 
@@ -38,6 +42,7 @@ function App() {
 
             <Route path='/locations' element={<LocationList />} />
             <Route path='/weapons' element={<WeaponList />} />
+            <Route path='/weapons/:weaponId' element={<WeaponDetail />} />
             <Route path='/forum' element={<ForumList />} />
             <Route path='/forum/add' element={<ForumForm />} />
             <Route path='/about' element={<AboutList />} />
