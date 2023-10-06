@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { useNavigate, useParams } from "react-router-dom";
-import data from '../data/locations.json';
-import imageph from './image-ph.jpg';
-import mapph from './map-ph.jpg';
+import data from '../../data/locations.json';
+import imageph from '../image-ph.jpg';
+import mapph from '../map-ph.jpg';
 
 export default function LocationDetail(){
 

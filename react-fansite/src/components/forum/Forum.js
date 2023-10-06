@@ -4,6 +4,10 @@ import { useEffect, useState } from "react";
 
 export default function Forum(){
     return (
-        <div>I am a happy forum</div>
+        <>
+            <h1>Ye Olde Forum</h1>
+            <ForumForm />
+        </>
+        
     );
 }
