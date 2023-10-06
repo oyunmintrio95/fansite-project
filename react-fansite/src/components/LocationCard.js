@@ -1,51 +1,50 @@
+import imageph from './image-ph.jpg';
+import mapph from './map-ph.jpg';
+import { Link } from "react-router-dom";
+
 export default function LocationCard({location}){
+
+    function phCheck(imgFileName){
+        switch(imgFileName){
+            case "image-ph.jpg":
+                imgFileName = imageph;
+                break;
+            case "map-ph.jpg":
+                imgFileName = mapph;
+                break;
+            default:
+                imgFileName = imgFileName;
+        }
+        return imgFileName;
+    }
+
     return (
         <div className='col'>
             <div className='card h-100'>
                 <div>
-
+                    <img 
+                    className='card-img-top'
+                    style={{height: '250px', objectFit: 'cover'}}
+                    src={`${phCheck(location.images[0].url)}`} alt={`${location.images[0].altText}`} />
                 </div>
                 <div className='card-body'>
-                    <h2 className='card-title fs-4'>Name: {location.name} </h2>
-                    <h3 className='card-subtitle fs-5 mb-2 text-body-secondary'>Type: {location.type}</h3>
-                    <ul className='card-text'>
-                        <li>ID: {location.id}</li>
-                        <li>Name: {location.name}</li>
-                        <li>Zones: {location.zoneCount}</li>
-                    </ul>
+                    <h1 className='card-title fs-4'>{location.name}</h1>
+                    <p><strong>Category:</strong> {location.category}
+                    {/* </p>
+                    <p> */}
+                        <br />
+                        <strong>Type:</strong> {location.type}</p>
+ 
+                    <p><strong>Summary:</strong><br />
+                    {location.summary}
+                    </p>
                 </div>
-
+                <div className='card-footer d-flex justify-content-end'>
+                    <Link className='btn btn-primary me-2' to={`/locations/${location.id}`}>Detail</Link>
+                </div>
             </div>
         </div>
         
     );
 
 }
-
-// {
-//     "id": 1,
-//     "name": "Ancient Forest",
-//     "zoneCount": 16,
-//     "camps": [
-//         {
-//             "id": 1,
-//             "name": "Southwest Camp",
-//             "zone": 1
-//         },
-//         {
-//             "id": 2,
-//             "name": "Northwest Camp",
-//             "zone": 8
-//         },
-//         {
-//             "id": 3,
-//             "name": "Northeast Camp",
-//             "zone": 11
-//         },
-//         {
-//             "id": 4,
-//             "name": "Ancient Forest Camp",
-//             "zone": 17
-//         }
-//     ]
-// }
