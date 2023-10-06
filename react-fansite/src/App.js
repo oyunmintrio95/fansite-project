@@ -11,7 +11,15 @@ import Landing from "./components/Landing";
 import Nav from "./components/Nav";
 import GeneralError from './components/GeneralError';
 import ArmorDetail from './components/ArmorDetail';
+
+import ArmorHead from './components/armors/ArmorHead';
+import ArmorGloves from './components/armors/ArmorGloves';
+import ArmorLegs from './components/armors/ArmorLegs';
+import ArmorWaist from './components/armors/ArmorWaist';
+import ArmorChest from './components/armors/ArmorChest';
+
 import WeaponDetail from './components/WeaponDetail';
+
 
 function App() {
 
@@ -22,8 +30,16 @@ function App() {
           <Routes>
             <Route path='/' element={<Landing />} />
             <Route path='/monsters' element={<MonsterList />} />
+
+            {/* Armors routes */}
             <Route path='/armors' element={<ArmorList />} />
             <Route path='/armors/:armorId' element={<ArmorDetail />} />
+            <Route path='/armors/head' element={<ArmorHead />} />
+            <Route path='/armors/chest' element={<ArmorChest />} />
+            <Route path='/armors/gloves' element={<ArmorGloves />} />
+            <Route path='/armors/legs' element={<ArmorLegs />} />
+            <Route path='/armors/waist' element={<ArmorWaist />} />
+
             <Route path='/locations' element={<LocationList />} />
             <Route path='/weapons' element={<WeaponList />} />
             <Route path='/weapons/:weaponId' element={<WeaponDetail />} />

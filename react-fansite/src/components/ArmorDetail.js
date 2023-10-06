@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 import SkillsDetail from './SkillsDetail';
 
@@ -48,9 +48,8 @@ export default function ArmorDetail(){
         <>
             <h1 className='mt-3 mb-3'> {armor.name} Detail </h1>
 
-            <div className="row">
+            <div className="my-4"  style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
                 <img 
-                    className='card-img-top'
                     style={{height: '250px', objectFit: 'cover'}}
                     src={armor.assets.imageMale} alt={`Male ${armor.name}`} />
              </div>
@@ -178,6 +177,10 @@ export default function ArmorDetail(){
                     </div>
                     :<SkillsDetail skills = {armor.skills} />
                 }
+            </div>
+
+            <div>
+                <Link className="btn btn-primary" to="/armors">Back</Link>
             </div>
 
                 

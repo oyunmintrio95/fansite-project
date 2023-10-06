@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import ArmorCard from "./ArmorCard";
 
 export default function ArmorList(){
@@ -28,9 +28,59 @@ export default function ArmorList(){
             })
     },[])
 
+    let headList = [];
+    let chestList = [];
+    let glovesList = [];
+    let waistList = [];
+    let legsList = [];
+
+    armors.map(armor => {
+        switch(armor.type){
+            case 'head':
+                headList.push(armor);
+                break;
+            case 'chest':
+                chestList.push(armor);
+                break;
+            case 'gloves':
+                glovesList.push(armor);
+                break;
+            case 'waist':
+                waistList.push(armor);
+                break;
+            case 'legs':
+                legsList.push(armor);
+                break;
+        }
+    })
+
+
+
     return (
-        <div>
-            <h1>Armors</h1>
+        <div className="mb-3">
+            <h1 className="mb-3">Armors</h1>
+            <ul class="nav nav-pills mb-3">
+                <li class="nav-item">
+                <Link class="nav-link active" aria-current="page" to="/armors">All</Link>
+                </li>
+                <li class="nav-item">
+                <Link class="nav-link" to="/armors/head" state={{headList:{headList}}}>Head</Link>
+                </li>
+                <li class="nav-item">
+                <Link class="nav-link" to="/armors/chest" state={{chestList:{chestList}}}>Chest</Link>
+                </li>
+                <li class="nav-item">
+                <Link class="nav-link" to="/armors/waist" state={{waistList:{waistList}}}>Waist</Link>
+                </li>
+                <li class="nav-item">
+                <Link class="nav-link" to="/armors/legs" state={{legsList:{legsList}}}>Legs</Link>
+                </li>
+                <li class="nav-item">
+                <Link class="nav-link" to="/armors/gloves" state={{glovesList:{glovesList}}}>Gloves</Link>
+                </li>
+                
+            </ul>
+
           
             <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4'>
                 {armors.map(armor => {
