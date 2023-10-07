@@ -34,7 +34,7 @@ console.log(locationId);
     // let thisLocation = data.locations.find(location => location.id === locationId);
 
     let thisLocation = data.locations.find(location => location.id === locationId);
-    console.log(thisLocation.name);
+    // console.log(thisLocation.name);
     //     return thisLocation;
     // };
 // console.log(thisLocation);

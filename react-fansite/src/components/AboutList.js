@@ -10,7 +10,7 @@ export default function AboutList() {
             .then(data => setAbout(data));
     }, []);
     return (
-
+<div></div>
     );
     
 }
