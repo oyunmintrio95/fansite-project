@@ -31,9 +31,16 @@ console.log(locationId);
 
     
     // const getObjectById = (locationId) => {
-    // let thisLocation = data.locations.find(location => location.id === locationId);
 
-    // let thisLocation = data.locations.find(location => location.id === locationId);
+    // let thisLocation = data.locations.find((location) => {
+    //     const aPlace = location.id === locationId;
+    //     console.log(aPlace.name);
+    //     return aPlace;
+    // });
+
+    // let placeName = thisLocation.name;
+
+    // console.log(placeName);
     // const [ place, setPlace] = useState(INITIAL_LOCATION);
     // setPlace({
     //     name: thisLocation.name,
