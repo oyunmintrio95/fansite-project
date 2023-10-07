@@ -33,7 +33,24 @@ console.log(locationId);
     // const getObjectById = (locationId) => {
     // let thisLocation = data.locations.find(location => location.id === locationId);
 
-    let thisLocation = data.locations.find(location => location.id === locationId);
+    // let thisLocation = data.locations.find(location => location.id === locationId);
+    // const [ place, setPlace] = useState(INITIAL_LOCATION);
+    // setPlace({
+    //     name: thisLocation.name,
+    //     category: thisLocation.category,
+    //     type: thisLocation.type,
+    //     summary: thisLocation.summary,
+    //     about: thisLocation.about,
+    //     description: thisLocation.description,
+    //     hazards: thisLocation.hazards,
+    //     materials: thisLocation.materials,
+    //     monsters: thisLocation.monsters,
+    //     quests: thisLocation.quests,
+    //     images: thisLocation.images,
+    //     references: thisLocation.references,
+    //     maps: thisLocation.maps
+    // });
+
     // console.log(thisLocation.name);
     //     return thisLocation;
     // };
