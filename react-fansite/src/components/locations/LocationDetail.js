@@ -4,7 +4,42 @@ import data from '../../data/locations.json';
 import imageph from '../image-ph.jpg';
 import mapph from '../map-ph.jpg';
 
+const INITIAL_LOCATION = {
+	id: 0,
+    name: "",
+    category: "",
+    type: "",
+    summary: "",
+    about: "",
+    description: "",
+    hazards: [],
+    materials: [],
+    monsters: [],
+    quests: [],
+    images: [],
+    references: [],
+    maps: []
+};
+
 export default function LocationDetail(){
+
+    // const [ locations, setLocations] = useState(`data.locations`);
+// console.log(locations);
+    const { locationId } = useParams();
+console.log(locationId);
+    console.log(data);
+
+    
+    // const getObjectById = (locationId) => {
+    // let thisLocation = data.locations.find(location => location.id === locationId);
+
+    let thisLocation = data.locations.find(location => location.id === locationId);
+    console.log(thisLocation.name);
+    //     return thisLocation;
+    // };
+// console.log(thisLocation);
+    // let place = getObjectById(2);
+    // console.log(place);
 
     function phCheck(imgFileName){
         switch(imgFileName){
@@ -20,14 +55,14 @@ export default function LocationDetail(){
         return imgFileName;
     }
 
-    const [ location, setLocation] = useState(`data.locations.location`);
-    console.log(data.locations.location.name);
+    // console.log(thisLocation);
+    // console.log(data.locations.location.name);
+
     const navigate = useNavigate();
-    const { locationId } = useParams();
 
     return(
         <>
-            <h1 className='mt-3 mb-3'> {location.name} Details</h1>
+            {/* <h1 className='mt-3 mb-3'> {location.name} Details</h1>
 
             <div className='mb-3'>
                 <label className='form-label'>Name</label>
@@ -92,7 +127,7 @@ export default function LocationDetail(){
                         readOnly />
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             {/* <div className='mb-3'>
                 <h4>Resistences</h4>
