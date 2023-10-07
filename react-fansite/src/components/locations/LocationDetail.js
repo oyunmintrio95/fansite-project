@@ -1,11 +1,11 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from "react-router-dom";
 import data from '../../data/locations.json';
 import imageph from '../image-ph.jpg';
 import mapph from '../map-ph.jpg';
 
 const INITIAL_LOCATION = {
-	id: 0,
+    id: 0,
     name: "",
     category: "",
     type: "",
@@ -21,15 +21,32 @@ const INITIAL_LOCATION = {
     maps: []
 };
 
-export default function LocationDetail(){
+export default function LocationDetail() {
 
     // const [ locations, setLocations] = useState(`data.locations`);
-// console.log(locations);
+    // console.log(locations);
     const { locationId } = useParams();
-console.log(locationId);
+    console.log(locationId);
     console.log(data);
 
-    
+    // const [locations, setLocations] = useState([]);
+
+    // useEffect(() => {
+    //     setLocations(data);
+    // }, []);
+
+    // const deleteItem = (id) => {
+    //     const newLocations = locations.filter((item) => item.id !== locationId);
+    //     setLocations(newLocations);
+    // };
+
+    // let placeName = locations[0].name;
+
+    // const locData = data.locations.find((item) => item.id === locationId);
+    // console.log('locData', locData);
+
+    // const [ location, setLocation] = useState({});
+
     // const getObjectById = (locationId) => {
 
     // let thisLocation = data.locations.find((location) => {
@@ -61,12 +78,12 @@ console.log(locationId);
     // console.log(thisLocation.name);
     //     return thisLocation;
     // };
-// console.log(thisLocation);
+    // console.log(thisLocation);
     // let place = getObjectById(2);
     // console.log(place);
 
-    function phCheck(imgFileName){
-        switch(imgFileName){
+    function phCheck(imgFileName) {
+        switch (imgFileName) {
             case "image-ph.jpg":
                 imgFileName = imageph;
                 break;
@@ -84,8 +101,15 @@ console.log(locationId);
 
     const navigate = useNavigate();
 
-    return(
+    return (
         <>
+
+        {/* {locations.map((location) => (
+            <div key={location.id}>
+                            <h1>{location.name}</h1>
+            </div>
+
+        ))} */}
             {/* <h1 className='mt-3 mb-3'> {location.name} Details</h1>
 
             <div className='mb-3'>
@@ -201,7 +225,7 @@ console.log(locationId);
                     </div>
                 </div>
             </div> */}
-           
+
             {/* <div className='mb-3'>
                 <h4>Skills</h4>
                 <hr></hr>
