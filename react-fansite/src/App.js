@@ -17,22 +17,23 @@ import ArmorLegs from './components/armors/ArmorLegs';
 import ArmorWaist from './components/armors/ArmorWaist';
 import ArmorChest from './components/armors/ArmorChest';
 
-import WeaponList from "./components/WeaponList";
-import WeaponGreatSword from './components/weapons/WeaponGreatSword';
-import WeaponLongSword from './components/weapons/WeaponLongSword';
-import WeaponSwordAndShield from './components/weapons/WeaponSwordAndShield';
-import WeaponDualBlade from './components/weapons/WeaponDualBlade';
-import WeaponHammer from './components/weapons/WeaponHammer';
-import WeaponHuntingHorn from './components/weapons/WeaponHuntingHorn';
-import WeaponLance from './components/weapons/WeaponLance';
-import WeaponGunlance from './components/weapons/WeaponGunlance';
-import WeaponSwitchAxe from './components/weapons/WeaponSwitchAxe';
-import WeaponChargeBlade from './components/weapons/WeaponChargeBlade';
-import WeaponInsectGlaive from './components/weapons/WeaponInsectGlaive';
-import WeaponLightBowgun from './components/weapons/WeaponLightBowgun';
-import WeaponHeavyBowgun from './components/weapons/WeaponHeavyBowgun';
-import WeaponBow from './components/weapons/WeaponBow';
-import WeaponDetail from './components/WeaponDetail';
+import WeaponList from "./components/Weapons/WeaponList";
+import WeaponDetail from './components/Weapons/WeaponDetail';
+import WeaponGreatSword from './components/Weapons/WeaponGreatSword';
+import WeaponLongSword from './components/Weapons/WeaponLongSword';
+import WeaponSwordAndShield from './components/Weapons/WeaponSwordAndShield';
+import WeaponDualBlade from './components/Weapons/WeaponDualBlade';
+import WeaponHammer from './components/Weapons/WeaponHammer';
+import WeaponHuntingHorn from './components/Weapons/WeaponHuntingHorn';
+import WeaponLance from './components/Weapons/WeaponLance';
+import WeaponGunlance from './components/Weapons/WeaponGunlance';
+import WeaponSwitchAxe from './components/Weapons/WeaponSwitchAxe';
+import WeaponChargeBlade from './components/Weapons/WeaponChargeBlade';
+import WeaponInsectGlaive from './components/Weapons/WeaponInsectGlaive';
+import WeaponLightBowgun from './components/Weapons/WeaponLightBowgun';
+import WeaponHeavyBowgun from './components/Weapons/WeaponHeavyBowgun';
+import WeaponBow from './components/Weapons/WeaponBow';
+
 
 import MonsterList from "./components/MonsterList";
 

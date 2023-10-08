@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 export default function WeaponDetail(){
 
@@ -44,6 +45,9 @@ export default function WeaponDetail(){
 return(
     <>
             <h1 className='mt-3 mb-3'> {weapon.name} Detail </h1>
+            <div className="d-flex justify-content-end">
+                <Link className="btn btn-warning mb-3" to="/weapons">Back</Link>
+            </div>
 
             <div className="my-4"  style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
                 <img 
