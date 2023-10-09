@@ -57,6 +57,8 @@ export default function ForumForm({ fetchPosts}) {
             }
         });;
 
+        evt.target.reset();
+
     }
 
     return (
