@@ -21,4 +21,4 @@ create table forum (
 insert into about (first_name, last_name, about_description, git) values
 		('Tony', 'Lee', 'I am a huge Monster Hunter fan, with a B.S. in Mathematics and Computer Science. I enjoy playing tennis, video games, and reading. My favorite monster from the Monster Hunter Franchise is the Rathalos, and my most recent favorite weapon is the Bow, previously it was the Switch Axe. ','github.com/tal154'),
 		('Hayoung', 'Cheon', 'Passionate and fast adapting backend developer with some experiences of designing, building, and enhancing JAVA spring boot web application projects. I have a B.S. in Elementary Education and Computer Education. I enjoy camping, hiking and solving puzzles.','github.com/oyunmintrio95'),
-		('Autumn', 'Sprout', 'Passionate and fast adapting backend developer with some experiences of designing, building, and enhancing JAVA spring boot web application projects. I have a B.S. in Elementary Education and Computer Education. I enjoy camping, hiking and solving puzzles.','github.com/jotasprout');
+		('Autumn', 'Sprout', 'I like books and reading. Those are not necessarily the same thing.','github.com/jotasprout');
