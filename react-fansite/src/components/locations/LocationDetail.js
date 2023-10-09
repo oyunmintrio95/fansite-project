@@ -151,6 +151,10 @@ export default function LocationDetail() {
                 <h1>{location.name}</h1>
             </div>
 
+            {/* <div key={locationData.id}>
+                <h1>{locationData.name}</h1>
+            </div> */}
+
             {/* {locations.map((location) => (
             <div key={location.id}>
                             <h1>{location.name}</h1>
