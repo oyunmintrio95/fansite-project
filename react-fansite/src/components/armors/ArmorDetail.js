@@ -1,15 +1,17 @@
 import { useEffect, useState } from 'react';
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
-export default function WeaponDetail(){
+import SkillsDetail from '../SkillsDetail';
 
-    const [ weapon, setWeapon] = useState(null);
+export default function ArmorDetail(){
+
+    const [ armor, setArmor] = useState(null);
 
     const navigate = useNavigate();
-    const { weaponId } = useParams();
+    const { armorId } = useParams();
 
     useEffect(() => {
-        fetch(`https://mhw-db.com/weapons/${weaponId}`)
+        fetch(`https://mhw-db.com/armor/${armorId}`)
             .then(res => {
                 if(res.ok){
                     return res.json();
@@ -22,14 +24,14 @@ export default function WeaponDetail(){
                     );
                 }
             })
-            .then(setWeapon)
+            .then(setArmor)
             .catch(error => {
                 console.error(error);
                 navigate('/error', {state : {error}});
             })
-    },[weaponId]);
+    },[armorId]);
 
-    if(!weapon){
+    if(!armor){
         return(
             <div
                 style={{ minHeight: '80vh' }}
@@ -41,15 +43,15 @@ export default function WeaponDetail(){
         )
 
     }
-return(
-    <>
-            <h1 className='mt-3 mb-3'> {weapon.name} Detail </h1>
+
+    return(
+        <>
+            <h1 className='mt-3 mb-3'> {armor.name} Detail </h1>
 
             <div className="my-4"  style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
                 <img 
-                    className='card-img-top'
-                    style={{height: '200px', width: '200px', objectFit: 'none', objectPosition: 'center'}}
-                    src={weapon.assets.image} alt={`${weapon.name}`} />
+                    style={{height: '250px', objectFit: 'cover'}}
+                    src={armor.assets.imageMale} alt={`Male ${armor.name}`} />
              </div>
 
             <div className='mb-3'>
@@ -57,7 +59,7 @@ return(
                     <input type="text" className="form-control" 
                     id = "name"
                     name = "name"
-                    value = {weapon.name}
+                    value = {armor.name}
                     readOnly />
             </div>
             <div className='row mb-3'>
@@ -66,7 +68,15 @@ return(
                     <input type="text" className="form-control" 
                     id = "type"
                     name = "type"
-                    value = {weapon.type}
+                    value = {armor.type}
+                    readOnly />
+                </div>
+                <div className='col'>
+                    <label className='form-label'>Rank</label>
+                    <input type="text" className="form-control" 
+                    id = "rank"
+                    name = "rank"
+                    value = {armor.rank}
                     readOnly />
                 </div>
                 <div className='col'>
@@ -74,41 +84,41 @@ return(
                     <input type="number" className="form-control" 
                     id = "rarity"
                     name = "rarity"
-                    value = {weapon.rarity}
+                    value = {armor.rarity}
                     readOnly />
                 </div>
             </div>
             <div className='mb-3'>
-                <h4>Attack</h4>
+                <h4>Defense</h4>
                 <hr></hr>
                 <div className='row mb-3'>
                     <div className='col'>
-                        <label className='form-label'>Display</label>
+                        <label className='form-label'>Base</label>
                         <input type="number" className="form-control" 
-                        id = "display"
-                        name = "display"
-                        value = {weapon.attack.display}
+                        id = "base"
+                        name = "base"
+                        value = {armor.defense.base}
                         readOnly />
                     </div>
                     <div className='col'>
-                        <label className='form-label'>Raw</label>
+                        <label className='form-label'>max</label>
                         <input type="number" className="form-control" 
-                        id = "raw"
-                        name = "raw"
-                        value = {weapon.attack.raw}
+                        id = "max"
+                        name = "max"
+                        value = {armor.defense.max}
                         readOnly />
                     </div>
                     <div className='col'>
-                        <label className='form-label'>Damage Type</label>
-                        <input type="text" className="form-control" 
-                        id = "damageType"
-                        name = "damageType"
-                        value = {weapon.damageType}
+                        <label className='form-label'>Augmented</label>
+                        <input type="number" className="form-control" 
+                        id = "augmented"
+                        name = "augmented"
+                        value = {armor.defense.augmented}
                         readOnly />
                     </div>
                 </div>
             </div>
-{/*
+
             <div className='mb-3'>
                 <h4>Resistences</h4>
                 <hr></hr>
@@ -118,7 +128,7 @@ return(
                         <input type="number" className="form-control" 
                         id = "fire"
                         name = "fire"
-                        value = {weapon.resistances.fire}
+                        value = {armor.resistances.fire}
                         readOnly />
                     </div>
                     <div className='col'>
@@ -126,7 +136,7 @@ return(
                         <input type="number" className="form-control" 
                         id = "water"
                         name = "water"
-                        value = {weapon.resistances.water}
+                        value = {armor.resistances.water}
                         readOnly />
                     </div>
                     <div className='col'>
@@ -134,7 +144,7 @@ return(
                         <input type="number" className="form-control" 
                         id = "ice"
                         name = "ice"
-                        value = {weapon.resistances.ice}
+                        value = {armor.resistances.ice}
                         readOnly />
                     </div>
                 </div>
@@ -144,7 +154,7 @@ return(
                         <input type="number" className="form-control" 
                         id = "thunder"
                         name = "thunder"
-                        value = {weapon.resistances.thunder}
+                        value = {armor.resistances.thunder}
                         readOnly />
                     </div>
                     <div className='col'>
@@ -152,26 +162,33 @@ return(
                         <input type="number" className="form-control" 
                         id = "dragon"
                         name = "dragon"
-                        value = {weapon.resistances.dragon}
+                        value = {armor.resistances.dragon}
                         readOnly />
                     </div>
                 </div>
-            </div> 
+            </div>
            
             <div className='mb-3'>
                 <h4>Skills</h4>
                 <hr></hr>
-                {weapon.skills.length == 0 ?
+                {armor.skills.length == 0 ?
                     <div>
                         <p>No skills found</p>
                     </div>
-                    :<SkillsDetail skills = {weapon.skills} />
+                    :<SkillsDetail skills = {armor.skills} />
                 }
             </div>
-*/}
+
+            <div>
+                <Link className="btn btn-primary" to="/armors">Back</Link>
+            </div>
+
                 
          
             
         </>
-);
+    );
+
+
+
 }

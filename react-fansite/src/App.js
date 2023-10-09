@@ -1,40 +1,41 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Add this!
 
-import MonsterList from "./components/MonsterList";
 import AboutList from "./components/AboutList";
-import ArmorList from "./components/ArmorList";
-import WeaponList from "./components/WeaponList";
-import Forum from './components/forum/Forum';
-import LocationList from "./components/locations/LocationList";
-import LocationDetail from './components/locations/LocationDetail';
 import Landing from "./components/Landing";
 import Nav from "./components/Nav";
 import GeneralError from './components/GeneralError';
-import ArmorDetail from './components/ArmorDetail';
+import Forum from './components/forum/Forum';
 
+import Location from "./components/locations/Location";
+import LocationDetail from './components/locations/LocationDetail';
+
+import ArmorList from "./components/armors/ArmorList";
+import ArmorDetail from './components/armors/ArmorDetail';
 import ArmorHead from './components/armors/ArmorHead';
 import ArmorGloves from './components/armors/ArmorGloves';
 import ArmorLegs from './components/armors/ArmorLegs';
 import ArmorWaist from './components/armors/ArmorWaist';
 import ArmorChest from './components/armors/ArmorChest';
 
-import WeaponGreatSword from './components/weapons/WeaponGreatSword';
-import WeaponLongSword from './components/weapons/WeaponLongSword';
-import WeaponSwordAndShield from './components/weapons/WeaponSwordAndShield';
-import WeaponDualBlade from './components/weapons/WeaponDualBlade';
-import WeaponHammer from './components/weapons/WeaponHammer';
-import WeaponHuntingHorn from './components/weapons/WeaponHuntingHorn';
-import WeaponLance from './components/weapons/WeaponLance';
-import WeaponGunlance from './components/weapons/WeaponGunlance';
-import WeaponSwitchAxe from './components/weapons/WeaponSwitchAxe';
-import WeaponChargeBlade from './components/weapons/WeaponChargeBlade';
-import WeaponInsectGlaive from './components/weapons/WeaponInsectGlaive';
-import WeaponLightBowgun from './components/weapons/WeaponLightBowgun';
-import WeaponHeavyBowgun from './components/weapons/WeaponHeavyBowgun';
-import WeaponBow from './components/weapons/WeaponBow';
+import WeaponList from "./components/Weapons/WeaponList";
+import WeaponDetail from './components/Weapons/WeaponDetail';
+import WeaponGreatSword from './components/Weapons/WeaponGreatSword';
+import WeaponLongSword from './components/Weapons/WeaponLongSword';
+import WeaponSwordAndShield from './components/Weapons/WeaponSwordAndShield';
+import WeaponDualBlade from './components/Weapons/WeaponDualBlade';
+import WeaponHammer from './components/Weapons/WeaponHammer';
+import WeaponHuntingHorn from './components/Weapons/WeaponHuntingHorn';
+import WeaponLance from './components/Weapons/WeaponLance';
+import WeaponGunlance from './components/Weapons/WeaponGunlance';
+import WeaponSwitchAxe from './components/Weapons/WeaponSwitchAxe';
+import WeaponChargeBlade from './components/Weapons/WeaponChargeBlade';
+import WeaponInsectGlaive from './components/Weapons/WeaponInsectGlaive';
+import WeaponLightBowgun from './components/Weapons/WeaponLightBowgun';
+import WeaponHeavyBowgun from './components/Weapons/WeaponHeavyBowgun';
+import WeaponBow from './components/Weapons/WeaponBow';
 
-import WeaponDetail from './components/WeaponDetail';
 
+import MonsterList from "./components/MonsterList";
 
 function App() {
 
@@ -44,7 +45,9 @@ function App() {
       <main>
           <Routes>
             <Route path='/' element={<Landing />} />
-            <Route path='/monsters' element={<MonsterList />} />
+            <Route path='/forum' element={<Forum />} />
+            <Route path='/about' element={<AboutList />} />
+            <Route path='/error' element = {<GeneralError />} />
 
             {/* Armors routes */}
             <Route path='/armors' element={<ArmorList />} />
@@ -56,6 +59,8 @@ function App() {
             <Route path='/armors/waist' element={<ArmorWaist />} />
 
             {/* Weapon Routes */}
+            <Route path='/weapons' element={<WeaponList />} />
+            <Route path='/weapons/:weaponId' element={<WeaponDetail />} />
             <Route path='/weapons/great-sword' element={<WeaponGreatSword />} />
             <Route path='/weapons/long-sword' element={<WeaponLongSword />} />
             <Route path='/weapons/sword-and-shield' element={<WeaponSwordAndShield />} />
@@ -71,13 +76,13 @@ function App() {
             <Route path='/weapons/heavy-bowgun' element={<WeaponHeavyBowgun />} />
             <Route path='/weapons/bow' element={<WeaponBow />} />
 
-            <Route path='/locations' element={<LocationList />} />
+            {/* Location Routes */}
+            <Route path='/locations' element={<Location />} />
             <Route path='/locations/:locationId' element={<LocationDetail />} />
-            <Route path='/weapons' element={<WeaponList />} />
-            <Route path='/weapons/:weaponId' element={<WeaponDetail />} />
-            <Route path='/forum' element={<Forum />} />
-            <Route path='/about' element={<AboutList />} />
-            <Route path='/error' element = {<GeneralError />} />
+
+            {/* Monster Routes */}
+            <Route path='/monsters' element={<MonsterList />} />
+
           </Routes>
         </main>
     </Router>

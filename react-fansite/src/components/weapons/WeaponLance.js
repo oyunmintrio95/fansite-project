@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import WeaponCard from "../WeaponCard";
+import WeaponCard from "./WeaponCard";
 
 export default function WeaponLance(){
     const location = useLocation();
