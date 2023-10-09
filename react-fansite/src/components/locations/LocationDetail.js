@@ -1,13 +1,89 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from "react-router-dom";
 import data from '../../data/locations.json';
 import imageph from '../image-ph.jpg';
 import mapph from '../map-ph.jpg';
 
-export default function LocationDetail(){
+const INITIAL_LOCATION = {
+    id: 0,
+    name: "",
+    category: "",
+    type: "",
+    summary: "",
+    about: "",
+    description: "",
+    hazards: [],
+    materials: [],
+    monsters: [],
+    quests: [],
+    images: [],
+    references: [],
+    maps: []
+};
 
-    function phCheck(imgFileName){
-        switch(imgFileName){
+export default function LocationDetail() {
+
+    // const [ locations, setLocations] = useState(`data.locations`);
+    // console.log(locations);
+    const { locationId } = useParams();
+    console.log(locationId);
+    console.log(data);
+
+    // const [locations, setLocations] = useState([]);
+
+    // useEffect(() => {
+    //     setLocations(data);
+    // }, []);
+
+    // const deleteItem = (id) => {
+    //     const newLocations = locations.filter((item) => item.id !== locationId);
+    //     setLocations(newLocations);
+    // };
+
+    // let placeName = locations[0].name;
+
+    // const locData = data.locations.find((item) => item.id === locationId);
+    // console.log('locData', locData);
+
+    // const [ location, setLocation] = useState({});
+
+    // const getObjectById = (locationId) => {
+
+    // let thisLocation = data.locations.find((location) => {
+    //     const aPlace = location.id === locationId;
+    //     console.log(aPlace.name);
+    //     return aPlace;
+    // });
+
+    // let placeName = thisLocation.name;
+
+    // console.log(placeName);
+    // const [ place, setPlace] = useState(INITIAL_LOCATION);
+    // setPlace({
+    //     name: thisLocation.name,
+    //     category: thisLocation.category,
+    //     type: thisLocation.type,
+    //     summary: thisLocation.summary,
+    //     about: thisLocation.about,
+    //     description: thisLocation.description,
+    //     hazards: thisLocation.hazards,
+    //     materials: thisLocation.materials,
+    //     monsters: thisLocation.monsters,
+    //     quests: thisLocation.quests,
+    //     images: thisLocation.images,
+    //     references: thisLocation.references,
+    //     maps: thisLocation.maps
+    // });
+
+    // console.log(thisLocation.name);
+    //     return thisLocation;
+    // };
+    // console.log(thisLocation);
+    // let place = getObjectById(2);
+    // console.log(place);
+
+    function phCheck(imgFileName) {
+        switch (imgFileName) {
             case "image-ph.jpg":
                 imgFileName = imageph;
                 break;
@@ -20,23 +96,21 @@ export default function LocationDetail(){
         return imgFileName;
     }
 
-    const [ location, setLocation] = useState(`data.locations.location`);
-console.log(location.name);
+    // console.log(thisLocation);
+    // console.log(data.locations.location.name);
+
     const navigate = useNavigate();
-    const { locationId } = useParams();
-    // console.log(location.images[0].url);
-    // console.log(location.monsters[0]);
 
-    return(
+    return (
         <>
-            <h1 className='mt-3 mb-3'> {location.name} Details</h1>
 
-            {/* <div className="row">
-                <img 
-                    className='card-img-top'
-                    style={{height: '550px', objectFit: 'cover'}}
-                    src={phCheck(location.images[0].url)} alt={`${location.images[0].altText}`} />
-             </div> */}
+        {/* {locations.map((location) => (
+            <div key={location.id}>
+                            <h1>{location.name}</h1>
+            </div>
+
+        ))} */}
+            {/* <h1 className='mt-3 mb-3'> {location.name} Details</h1>
 
             <div className='mb-3'>
                 <label className='form-label'>Name</label>
@@ -101,7 +175,7 @@ console.log(location.name);
                         readOnly />
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             {/* <div className='mb-3'>
                 <h4>Resistences</h4>
@@ -151,7 +225,7 @@ console.log(location.name);
                     </div>
                 </div>
             </div> */}
-           
+
             {/* <div className='mb-3'>
                 <h4>Skills</h4>
                 <hr></hr>

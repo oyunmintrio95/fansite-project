@@ -40,7 +40,7 @@ export default function LocationCard({location}){
                     </p>
                 </div>
                 <div className='card-footer d-flex justify-content-end'>
-                    <Link className='btn btn-primary me-2' to={`/locations/${location.id}`}>Detail</Link>
+                    <Link className='btn btn-primary me-2 btn-sm' to={`/locations/${location.id}`}>Details</Link>
                 </div>
             </div>
         </div>
