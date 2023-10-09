@@ -5,9 +5,6 @@ import { useEffect, useState } from "react";
 export default function ForumPostList({posts}) {
 
 
-
-    console.log(posts);
-
     return (
         <>
             <table className="table table-striped">

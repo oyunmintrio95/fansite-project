@@ -1,6 +1,7 @@
 import ForumForm from "./ForumForm";
 import ForumPostList from "./ForumPostList";
 import { useEffect, useState } from "react";
+import toast from "react-hot-toast";
 
 export default function Forum(){
 
@@ -14,7 +15,7 @@ export default function Forum(){
             setPosts([]);
         }
     };
-
+   
     useEffect(() => {
 
         fetchPosts();

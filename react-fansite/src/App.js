@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Add this!
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 
 import AboutList from "./components/AboutList";
 import Landing from "./components/Landing";
@@ -17,7 +17,8 @@ import ArmorLegs from './components/armors/ArmorLegs';
 import ArmorWaist from './components/armors/ArmorWaist';
 import ArmorChest from './components/armors/ArmorChest';
 
-import WeaponList from "./components/WeaponList";
+import WeaponList from "./components/weapons/WeaponList";
+import WeaponDetail from './components/weapons/WeaponDetail';
 import WeaponGreatSword from './components/weapons/WeaponGreatSword';
 import WeaponLongSword from './components/weapons/WeaponLongSword';
 import WeaponSwordAndShield from './components/weapons/WeaponSwordAndShield';
@@ -32,7 +33,9 @@ import WeaponInsectGlaive from './components/weapons/WeaponInsectGlaive';
 import WeaponLightBowgun from './components/weapons/WeaponLightBowgun';
 import WeaponHeavyBowgun from './components/weapons/WeaponHeavyBowgun';
 import WeaponBow from './components/weapons/WeaponBow';
-import WeaponDetail from './components/WeaponDetail';
+
+import Errors from './components/Errors'
+
 
 import MonsterList from "./components/MonsterList";
 
@@ -82,6 +85,8 @@ function App() {
             {/* Monster Routes */}
             <Route path='/monsters' element={<MonsterList />} />
 
+            {/* Error Routes */}
+            <Route path='*' element={<Errors />} />
           </Routes>
         </main>
     </Router>
