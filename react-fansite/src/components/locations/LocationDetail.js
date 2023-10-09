@@ -6,7 +6,7 @@ import mapph from '../../image/map-ph.jpg';
 
 const INITIAL_LOCATION = {
     id: 0,
-    name: "",
+    name: "test",
     category: "",
     type: "",
     summary: "",
@@ -23,13 +23,56 @@ const INITIAL_LOCATION = {
 
 export default function LocationDetail() {
 
+    const [locations, setLocations] = useState([data.locations]);
     // const [ locations, setLocations] = useState(`data.locations`);
-    // console.log(locations);
+    console.log(locations);
     const { locationId } = useParams();
     console.log(locationId);
     console.log(data);
 
-    // const [locations, setLocations] = useState([]);
+
+    const [location, setLocation] = useState(INITIAL_LOCATION);
+
+    console.log(location.name);
+    // const locationData = data.locations.find((item) => item.id === locationId);
+    const locationData = locations.find((item) => item.id === locationId);
+
+    // useEffect(() => {
+    //     setLocation({ locationData });
+    // }, []);
+
+    // console.log(locationData.name);
+    // console.log(locationData);
+    // const [location, setLocation] = useState(locationData);
+
+    console.log(location.name);
+
+    //     let thisLocation = data.locations.find((location) => {
+    //         let aPlace = location.id === locationId;
+    //         // console.log(aPlace.name);
+    //         console.log(aPlace);
+    //         return aPlace;
+    //     });
+
+    // console.log(thisLocation.name);
+
+    // setLocation(locationData);
+
+    // setLocation({
+    //         name: locationData.name,
+    //         category: locationData.category,
+    //         type: locationData.type,
+    //         summary: locationData.summary,
+    //         about: locationData.about,
+    //         description: locationData.description,
+    //         hazards: locationData.hazards,
+    //         materials: locationData.materials,
+    //         monsters: locationData.monsters,
+    //         quests: locationData.quests,
+    //         images: locationData.images,
+    //         references: locationData.references,
+    //         maps: locationData.maps
+    //     });
 
     // useEffect(() => {
     //     setLocations(data);
@@ -104,7 +147,11 @@ export default function LocationDetail() {
     return (
         <>
 
-        {/* {locations.map((location) => (
+            <div key={location.id}>
+                <h1>{location.name}</h1>
+            </div>
+
+            {/* {locations.map((location) => (
             <div key={location.id}>
                             <h1>{location.name}</h1>
             </div>
