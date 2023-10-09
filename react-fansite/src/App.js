@@ -34,6 +34,8 @@ import WeaponLightBowgun from './components/weapons/WeaponLightBowgun';
 import WeaponHeavyBowgun from './components/weapons/WeaponHeavyBowgun';
 import WeaponBow from './components/weapons/WeaponBow';
 
+import Errors from './components/Errors'
+
 
 import MonsterList from "./components/MonsterList";
 
@@ -83,6 +85,8 @@ function App() {
             {/* Monster Routes */}
             <Route path='/monsters' element={<MonsterList />} />
 
+            {/* Error Routes */}
+            <Route path='*' element={<Errors />} />
           </Routes>
         </main>
     </Router>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 //import { useForm } from "react-hook-form";
+import toast, {Toaster} from 'react-hot-toast';
 
 export default function ForumForm({ fetchPosts }) {
 
@@ -45,8 +46,10 @@ export default function ForumForm({ fetchPosts }) {
         fetch("http://localhost:8080/forum", config)
         .then(response => {
             if (response.ok) {
+                toast.success("Post Success :)")
                 fetchPosts();
             } else {
+                toast.error("Post failed :(");
                 return response.json();
             }
         })
@@ -69,6 +72,7 @@ export default function ForumForm({ fetchPosts }) {
 
     return (
         <>
+            <div><Toaster/></div>
             <h1 className="display-6">Post Your Thoughts</h1>
 
             <form onSubmit={handleSubmit}>
