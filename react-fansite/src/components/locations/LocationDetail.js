@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from "react-router-dom";
 import data from '../../data/locations.json';
-import imageph from '../image-ph.jpg';
-import mapph from '../map-ph.jpg';
+import imageph from '../../image/image-ph.jpg';
+import mapph from '../../image/map-ph.jpg';
 
 const INITIAL_LOCATION = {
     id: 0,

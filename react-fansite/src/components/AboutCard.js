@@ -8,7 +8,7 @@ export default function AboutCard({about}){
                     <img 
                     className='card-img-top'
                     style={{height: '200px', objectFit: 'contain', borderRadius: '10px'}}
-                    src= 'https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/mhwi-barioth_render_002.png' alt='headshot' />
+                    src= {require(`../image/headshot${about.aboutId}.png`)} />
                 </div>
                 <div className='card-body'>
                     <h1 className='card-title text-center fs-3 mb-2'>{`${about.firstName} ${about.lastName}`} </h1>
@@ -16,7 +16,7 @@ export default function AboutCard({about}){
 
 
                     <div className='d-flex justify-content-end'>
-                    <a className='btn btn-primary' href={`https://${about.git}`} target="_blank">Git</a>
+                    <a href={`https://${about.git}`} target="_blank"><i className="bi bi-github fs-3"></i></a>
                     </div>
                 </div>
             </div>
