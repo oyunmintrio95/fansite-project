@@ -23,9 +23,10 @@ const INITIAL_LOCATION = {
 
 export default function LocationDetail() {
 
-
+    const {locationId} = useParams();
     const locationData = data.locations.find((item) => item.id == locationId);
 
+    
     console.log(locationData.name);
     console.log(locationData);
 
