@@ -21,6 +21,7 @@ const INITIAL_LOCATION = {
     maps: []
 };
 
+
 export default function LocationDetail() {
 
     const { locationId } = useParams();
@@ -30,6 +31,12 @@ export default function LocationDetail() {
     console.log(locationData.name);
     console.log(locationData);
 
+    const hazards = locationData.hazards.join(', ');
+    const quests = locationData.quests.join(', ');
+    const monsters = locationData.monsters.join(', ');
+    const materials = locationData.materials.join(', ');
+    const locationMaps = locationData.maps;
+    console.log(locationMaps);
 
     function phCheck(imgFileName) {
         switch (imgFileName) {
@@ -50,79 +57,101 @@ export default function LocationDetail() {
     return (
         <>
 
+            <div className='mb-3' style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
+
+                <img src={locationData.images[0].url}/>
+            </div>
             <div key={locationData.id}>
                 <h1>{locationData.name}</h1>
             </div>
-
-
-
-
-            <div className='mb-3'>
-                <label className='form-label'>Name</label>
-                    <input type="text" className="form-control" 
-                    id = "name"
-                    name = "name"
-                    value = {locationData.name}
-                    readOnly />
-            </div>
+            <hr></hr>
             <div className='row mb-3'>
                 <div className='col'>
                     <label className='form-label'>Type</label>
-                    <input type="text" className="form-control" 
-                    id = "type"
-                    name = "type"
-                    value = {locationData.type}
-                    readOnly />
+                    <input type="text" className="form-control"
+                        id="type"
+                        name="type"
+                        value={locationData.type}
+                        readOnly />
                 </div>
                 <div className='col'>
                     <label className='form-label'>Category</label>
-                    <input type="text" className="form-control" 
-                    id = "category"
-                    name = "category"
-                    value = {locationData.category}
-                    readOnly />
+                    <input type="text" className="form-control"
+                        id="category"
+                        name="category"
+                        value={locationData.category}
+                        readOnly />
                 </div>
                 <div className='col'>
                     <label className='form-label'>Rarity</label>
-                    <input type="text" className="form-control" 
-                    id = "rarity"
-                    name = "rarity"
-                    value = {locationData.rarity}
-                    readOnly />
+                    <input type="text" className="form-control"
+                        id="rarity"
+                        name="rarity"
+                        value={locationData.rarity}
+                        readOnly />
                 </div>
             </div>
+            <hr></hr>
             <div className='mb-3'>
                 <h4>Information</h4>
-                <hr></hr>
-                <div className='row mb-3'>
-                    <div className='col'>
-                        <label className='form-label'>Summary</label>
-                        <input type="text" className="form-control" 
-                        id = "summary"
-                        name = "summary"
-                        value = {locationData.summary}
-                        readOnly />
+                
+                <div className='row'>
+                    <div className='form-group'>
+                        <label className='form-label mt-4'>Summary</label>
+                        <textarea className="form-control"
+                            id="summary"
+                            name="summary"
+                            rows="3"
+                            value={locationData.summary}
+                            readOnly />
                     </div>
-                    <div className='col'>
-                        <label className='form-label'>About</label>
-                        <input type="text" className="form-control" 
-                        id = "about"
-                        name = "about"
-                        value = {locationData.about}
-                        readOnly />
+                    <div className='form-group'>
+                        <label className='form-label mt-4'>About</label>
+                        <textarea className="form-control"
+                            id="about"
+                            name="about"
+                            rows="3"
+                            value={locationData.about}
+                            readOnly />
                     </div>
-                    <div className='col'>
-                        <label className='form-label'>Description</label>
-                        <input type="text" className="form-control" 
-                        id = "description"
-                        name = "description"
-                        value = {locationData.description}
-                        readOnly />
+                    <div className='form-group'>
+                        <label className='form-label mt-4'>Description</label>
+                        <textarea className="form-control"
+                            id="description"
+                            name="description"
+                            rows="3"
+                            value={locationData.description}
+                            readOnly />
                     </div>
-                </div>
-            </div> 
 
-             {/* <div className='mb-3'>
+                </div>
+            </div>
+
+            <p><strong>Zones:</strong> {locationData.zoneCount}</p>
+            <p><strong>Quests:</strong> {quests}</p>
+            <p><strong>Materials:</strong> {materials}</p>
+            <p><strong>Hazards:</strong> {hazards}</p>
+            <p><strong>Monsters:</strong> {monsters}</p>
+            <hr></hr>
+            <div className='row mb-3'>
+            <h4>Maps</h4>
+                {locationMaps.map(locationMap => {
+                    console.log(locationMap);
+                    return (
+                        
+                            <div className='col'>
+                                <img
+                                    width="300px"
+                                    src={`${locationMap}`}
+                                    // alt='this is a map' 
+                                />
+                            </div>
+                        
+                    )
+                })}
+
+            </div>
+            {/* <div className='mb-3'>
                 <h4>Resistences</h4>
                 <hr></hr>
                 <div className='row mb-3'>
@@ -151,7 +180,7 @@ export default function LocationDetail() {
                         readOnly />
                     </div>
                 </div> */}
-                {/* <div className='row mb-3'>
+            {/* <div className='row mb-3'>
                     <div className='col'>
                         <label className='form-label'>Thunder</label>
                         <input type="text" className="form-control" 
@@ -171,20 +200,8 @@ export default function LocationDetail() {
                 </div> */}
             {/* </div>  */}
 
-             <div className='mb-3'>
-                <h4>Skills</h4>
-                <hr></hr>
-                {/* {locationData.skills.length == 0 ?
-                    <div>
-                        <p>No skills found</p>
-                    </div>
-                    :<SkillsDetail skills = {locationData.skills} />
-                } */}
-            </div>
 
-            <p><strong>Zones:</strong> {locationData.zoneCount}</p>
-            <p><strong>Quests:</strong> {locationData.quests}</p>
-            <p><strong>Hazards:</strong> {locationData.hazards}</p>
+
 
         </>
     );
