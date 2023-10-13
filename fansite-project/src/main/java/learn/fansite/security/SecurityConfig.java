@@ -44,6 +44,7 @@ public class SecurityConfig {
                         "/about").permitAll()
                 .antMatchers(HttpMethod.GET,
                         "/about/*").permitAll()
+                .antMatchers("/**").denyAll()
                 .and()
                 .addFilter(new JwtRequestFilter(authenticationManager(authConfig), jwtConverter))
                 .sessionManagement()

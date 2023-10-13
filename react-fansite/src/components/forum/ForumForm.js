@@ -1,11 +1,14 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 //import { useForm } from "react-hook-form";
 import toast, {Toaster} from 'react-hot-toast';
 
+import AuthContext from "../../context/AuthContext";
 export default function ForumForm({ fetchPosts }) {
 
     const [post, setPost] = useState([]);
+
+    const auth = useContext(AuthContext);
 
     const [formValues, setFormValues] = useState({
         forumName: "",
@@ -35,10 +38,13 @@ export default function ForumForm({ fetchPosts }) {
 
     function handleSubmit(evt) {
         evt.preventDefault();
+
+        
         const config = {
             method: "POST",
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                Authorization: `Bearer ${auth.user.token}`,
             },
             body: JSON.stringify(post)
         }
@@ -79,7 +85,7 @@ export default function ForumForm({ fetchPosts }) {
                 <div className="row mb-3">
                     <div className="col">
                         <label className="form-label" htmlFor="forumName">Name</label>
-                        <input id="forumName" name="forumName" type="text" className="form-control" required onChange={handleChange} />
+                        <input id="forumName" name="forumName" type="text" className="form-control" required value={auth.user.username} />
                     </div>
                 </div>
 

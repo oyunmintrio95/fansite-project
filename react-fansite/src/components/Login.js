@@ -1,6 +1,8 @@
 import { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 
+import Errors from "./Errors";
+
 import AuthContext from "../context/AuthContext";
 
 export default function Login(){
@@ -31,28 +33,33 @@ export default function Login(){
       const { jwt_token } = await response.json();
       console.log(jwt_token);
       auth.login(jwt_token);
-      navigate("/");
+      navigate("/forum");
     } else if (response.status === 403) {
       setErrors(["Login failed."]);
     } else {
+        console.log(response);
       setErrors(["Unknown error."]);
     }
   };
 
     return(
+       
         <div>
             <h1>Login</h1>
+             {errors.map((error, i) => (
+            <Errors key={i} msg={error} />
+            ))}
             <form onSubmit={handleSubmit}>
             <div className="mb-3 row">
-            <label htmlfor="staticEmail" className="col-sm-2 col-form-label">Email</label>
+            <label htmlFor="staticEmail" className="col-sm-2 col-form-label">Email</label>
             <div className="col-sm-10">
-             <input type="text" className="form-control" id="staticEmail" />
+             <input type="text" className="form-control" id="staticEmail" onChange={(event) => setUsername(event.target.value)} />
              </div>
         </div>
         <div className="mb-3 row">
-            <label htmlfor="inputPassword" class="col-sm-2 col-form-label">Password</label>
+            <label htmlfor="inputPassword" className="col-sm-2 col-form-label">Password</label>
             <div className="col-sm-10">
-            <input type="password" className="form-control" id="inputPassword" />
+            <input type="password" className="form-control" id="inputPassword" onChange={(event) => setPassword(event.target.value)} />
             </div>
         </div>
         <div>
