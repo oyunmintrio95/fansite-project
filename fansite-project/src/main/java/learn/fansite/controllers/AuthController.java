@@ -11,6 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -38,17 +39,23 @@ public class AuthController {
     @PostMapping("/login")
 
     public ResponseEntity<?> login(@RequestBody Map<String, String> credentials) {
-        UsernamePasswordAuthenticationToken authToken = new UsernamePasswordAuthenticationToken(
-                credentials.get("username"), credentials.get("password"));
-        // Moved AuthenticationException handling to the GlobalErrHandler
+        UsernamePasswordAuthenticationToken authToken =
+                new UsernamePasswordAuthenticationToken(credentials.get("username"), credentials.get("password"));
 
-        Authentication authentication = authenticationManager.authenticate(authToken);
-        if (authentication.isAuthenticated()) {
-            AppUser appUser = (AppUser) authentication.getPrincipal();
-            String jwt = jwtConverter.getTokenFromUser(appUser);
-            Map<String, String> result = new HashMap<>();
-            result.put("jwt_token", jwt);
-            return ResponseEntity.ok(result);
+        try {
+            Authentication authentication = authenticationManager.authenticate(authToken);
+
+            if (authentication.isAuthenticated()) {
+                String jwtToken = jwtConverter.getTokenFromUser((AppUser) authentication.getPrincipal());
+
+                HashMap<String, String> map = new HashMap<>();
+                map.put("jwt_token", jwtToken);
+
+                return new ResponseEntity<>(map, HttpStatus.OK);
+            }
+
+        } catch (AuthenticationException ex) {
+            System.out.println(ex);
         }
 
         return new ResponseEntity<>(HttpStatus.FORBIDDEN);

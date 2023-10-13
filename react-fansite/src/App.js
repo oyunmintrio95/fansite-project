@@ -1,4 +1,6 @@
+import {useState, useContext, useEffect} from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
+import jwtDecode from "jwt-decode";
 
 import AboutList from "./components/AboutList";
 import Landing from "./components/Landing";
@@ -38,11 +40,65 @@ import Errors from './components/Errors'
 
 
 import MonsterList from "./components/MonsterList";
+import Login from './components/Login';
 
+import AuthContext from './context/AuthContext';
+
+const LOCAL_STORAGE_TOKEN_KEY = "bugSafariToken";
 function App() {
 
+  const [user, setUser] = useState(null);
+
+  const [restoreLoginAttemptCompleted, setRestoreLoginAttemptCompleted] = useState(false);
+
+  useEffect(() => {
+    const token = localStorage.getItem(LOCAL_STORAGE_TOKEN_KEY);
+    if (token) {
+      login(token);
+    }
+    setRestoreLoginAttemptCompleted(true);
+  }, []);
+
+  const login = (token) => {
+    localStorage.setItem(LOCAL_STORAGE_TOKEN_KEY, token);
+    const { sub: username, authorities: authoritiesString } = jwtDecode(token);
+  
+    const roles = authoritiesString.split(',');
+  
+    const user = {
+      username,
+      roles,
+      token,
+      hasRole(role) {
+        return this.roles.includes(role);
+      }
+    };
+  
+    console.log(user);
+  
+    setUser(user);
+    return user;
+  };
+  
+  const logout = () => {
+    setUser(null);
+    localStorage.removeItem(LOCAL_STORAGE_TOKEN_KEY);
+  };
+
+  const auth = {
+    user: user ? { ...user } : null,
+    login,
+    logout
+  };
+
+  if (!restoreLoginAttemptCompleted) {
+    return null;
+  }
+
+
   return (
-    <Router>
+    <AuthContext.Provider value={auth}>
+      <Router>
       <Nav />
       <main>
           <Routes>
@@ -85,11 +141,14 @@ function App() {
             {/* Monster Routes */}
             <Route path='/monsters' element={<MonsterList />} />
 
+            <Route path='/login' element={<Login />} />
+
             {/* Error Routes */}
             <Route path='*' element={<Errors />} />
           </Routes>
         </main>
     </Router>
+    </AuthContext.Provider>
   );
 }
 

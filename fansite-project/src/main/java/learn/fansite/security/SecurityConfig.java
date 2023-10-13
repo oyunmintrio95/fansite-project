@@ -38,6 +38,12 @@ public class SecurityConfig {
                         "/refresh-token").authenticated()
                 .antMatchers(HttpMethod.POST,
                         "/forum").authenticated()
+                .antMatchers(HttpMethod.GET,
+                        "/forum").permitAll()
+                .antMatchers(HttpMethod.GET,
+                        "/about").permitAll()
+                .antMatchers(HttpMethod.GET,
+                        "/about/*").permitAll()
                 .and()
                 .addFilter(new JwtRequestFilter(authenticationManager(authConfig), jwtConverter))
                 .sessionManagement()
