@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from "react-router-dom";
 import data from '../../data/locations.json';
 import imageph from '../../image/image-ph.jpg';
@@ -26,7 +25,6 @@ export default function LocationDetail() {
 
     const {locationId} = useParams();
     const locationData = data.locations.find((item) => item.id == locationId);
-
     
     console.log(locationData.name);
     console.log(locationData);
@@ -151,57 +149,6 @@ export default function LocationDetail() {
                 })}
 
             </div>
-            {/* <div className='mb-3'>
-                <h4>Resistences</h4>
-                <hr></hr>
-                <div className='row mb-3'>
-                    <div className='col'>
-                        <label className='form-label'>Fire</label>
-                        <input type="text" className="form-control" 
-                        id = "fire"
-                        name = "fire"
-                        value = {locationData.resistances.fire}
-                        readOnly />
-                    </div>
-                    <div className='col'>
-                        <label className='form-label'>Water</label>
-                        <input type="text" className="form-control" 
-                        id = "water"
-                        name = "water"
-                        value = {locationData.resistances.water}
-                        readOnly />
-                    </div>
-                    <div className='col'>
-                        <label className='form-label'>Ice</label>
-                        <input type="text" className="form-control" 
-                        id = "ice"
-                        name = "ice"
-                        value = {locationData.resistances.ice}
-                        readOnly />
-                    </div>
-                </div> */}
-            {/* <div className='row mb-3'>
-                    <div className='col'>
-                        <label className='form-label'>Thunder</label>
-                        <input type="text" className="form-control" 
-                        id = "thunder"
-                        name = "thunder"
-                        value = {locationData.resistances.thunder}
-                        readOnly />
-                    </div>
-                    <div className='col'>
-                        <label className='form-label'>Dragon</label>
-                        <input type="text" className="form-control" 
-                        id = "dragon"
-                        name = "dragon"
-                        value = {locationData.resistances.dragon}
-                        readOnly />
-                    </div>
-                </div> */}
-            {/* </div>  */}
-
-
-
 
         </>
     );
