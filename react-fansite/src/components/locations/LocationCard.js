@@ -30,8 +30,6 @@ export default function LocationCard({location}){
                 <div className='card-body'>
                     <h1 className='card-title fs-4'>{location.name}</h1>
                     <p><strong>Category:</strong> {location.category}
-                    {/* </p>
-                    <p> */}
                         <br />
                         <strong>Type:</strong> {location.type}</p>
  
