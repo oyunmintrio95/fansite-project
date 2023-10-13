@@ -25,17 +25,22 @@ export default function LocationDetail() {
 
     const [locations, setLocations] = useState([data.locations]);
     // const [ locations, setLocations] = useState(`data.locations`);
-    console.log(locations);
+    console.log(locations.length);
+    console.log(typeof locations);
     const { locationId } = useParams();
-    console.log(locationId);
-    console.log(data);
+    // console.log(locationId);
+    // console.log(data);
 
 
     const [location, setLocation] = useState(INITIAL_LOCATION);
 
-    console.log(location.name);
+    // console.log(location.name);
     // const locationData = data.locations.find((item) => item.id === locationId);
-    const locationData = locations.find((item) => item.id === locationId);
+    // const locationData = locations.find((item) => item.id === locationId);
+    // console.log("locationData:"+locationData);
+
+    // const locationData = locations.findIndex(0).find(element => element.id == 1);
+    // console.log(locationData);
 
     // useEffect(() => {
     //     setLocation({ locationData });
@@ -45,7 +50,7 @@ export default function LocationDetail() {
     // console.log(locationData);
     // const [location, setLocation] = useState(locationData);
 
-    console.log(location.name);
+    // console.log(location.name);
 
     //     let thisLocation = data.locations.find((location) => {
     //         let aPlace = location.id === locationId;
